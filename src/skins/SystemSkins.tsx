@@ -25,7 +25,7 @@ import {
   Users,
   Wallet,
 } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { download } from "../io";
 import { safeMedia, type Item } from "../schema";
 import {
@@ -185,12 +185,23 @@ export function ContactsSkin(p: Props) {
 export function PhotosSkin(p: Props) {
   const { tab, setTab, q, setQ, items } = useContent(p, "图库");
   const [album, setAlbum] = useState("");
+  let captured: Item[] = [];
+  try {
+    const parsed = JSON.parse(String(p.ui?.capturedPhotos ?? "[]"));
+    if (Array.isArray(parsed)) captured = parsed as Item[];
+  } catch {
+    captured = [];
+  }
   const list =
     tab === "收藏"
       ? items.filter((i) => i.favorite)
       : album
         ? items.filter((i) => (i.folder || "未分类") === album)
         : items;
+  const visibleCaptured = tab === "图库" && !album ? captured : [];
+  const removeCaptured = (id: string) => {
+    p.onUi?.("capturedPhotos", JSON.stringify(captured.filter((photo) => photo.id !== id)));
+  };
   return (
     <div className="catalog-skin native-photos">
       <Header p={p} />
@@ -200,13 +211,9 @@ export function PhotosSkin(p: Props) {
           <div className="album-grid">
             {groupItems(items, "未分类").map((g) => (
               <button key={g} onClick={() => setAlbum(g)}>
-                <Media
-                  item={items.find((i) => (i.folder || "未分类") === g)!}
-                />
+                <Media item={items.find((i) => (i.folder || "未分类") === g)!} />
                 <strong>{g}</strong>
-                <small>
-                  {items.filter((i) => (i.folder || "未分类") === g).length} 项
-                </small>
+                <small>{items.filter((i) => (i.folder || "未分类") === g).length} 项</small>
               </button>
             ))}
           </div>
@@ -214,21 +221,31 @@ export function PhotosSkin(p: Props) {
           <>
             <SearchBox value={q} set={setQ} />
             <div className="photo-mosaic">
+              {visibleCaptured.map((photo) => (
+                <div className="captured-photo-cell" key={photo.id}>
+                  <button aria-label={"查看" + photo.title} onClick={() => p.onItem(photo)}>
+                    <Media item={photo} />
+                  </button>
+                  <button
+                    className="captured-photo-delete"
+                    aria-label={"删除" + photo.title}
+                    onClick={() => removeCaptured(photo.id)}
+                  >
+                    删除
+                  </button>
+                </div>
+              ))}
               {list.map((i) => (
-                <button
-                  aria-label={`查看${i.title}`}
-                  key={i.id}
-                  onClick={() => p.onItem(i)}
-                >
+                <button aria-label={`查看${i.title}`} key={i.id} onClick={() => p.onItem(i)}>
                   <Media item={i} />
                   {i.favorite && <Heart size={12} fill="white" />}
                 </button>
               ))}
             </div>
-            <p className="media-count">{list.length} 个项目</p>
+            <p className="media-count">{list.length + visibleCaptured.length} 个项目</p>
           </>
         )}
-        <Empty items={list} />
+        <Empty items={[...list, ...visibleCaptured]} />
       </div>
       <Tabs
         tabs={["图库", "相簿", "收藏"]}
@@ -244,61 +261,95 @@ export function PhotosSkin(p: Props) {
 }
 export function CameraSkin(p: Props) {
   const [mode, setMode] = useState("照片"),
-    [index, setIndex] = useState(0);
+    [index, setIndex] = useState(0),
+    [cameraError, setCameraError] = useState("");
+  const inputRef = useRef<HTMLInputElement>(null);
   const frames = p.items.filter((i) =>
     mode === "视频" ? i.kind === "video" : i.kind !== "video",
   );
   const frame = frames[index % Math.max(frames.length, 1)];
+  let captured: Item[] = [];
+  try {
+    const parsed = JSON.parse(String(p.ui?.capturedPhotos ?? "[]"));
+    if (Array.isArray(parsed)) captured = parsed as Item[];
+  } catch {
+    captured = [];
+  }
+  const capture = (file?: File) => {
+    if (!file) return;
+    if (!file.type.startsWith("image/")) {
+      setCameraError("请选择图片。");
+      return;
+    }
+    if (file.size > 8 * 1024 * 1024) {
+      setCameraError("照片大于 8 MB，请使用较小的照片再试。");
+      return;
+    }
+    const reader = new FileReader();
+    reader.onload = () => {
+      if (typeof reader.result !== "string") {
+        setCameraError("读取照片失败，请重试。");
+        return;
+      }
+      const photo: Item = {
+        id: "camera-" + Date.now().toString(36) + "-" + Math.random().toString(36).slice(2, 7),
+        title: "新拍摄的照片",
+        body: "由设备相机拍摄并保存在本机模拟相册中。",
+        richText: "",
+        meta: { source: "device-camera" },
+        time: new Date().toLocaleString("zh-CN", { hour12: false }),
+        sender: p.owner || "我",
+        avatar: "",
+        kind: "image",
+        media: reader.result,
+        hidden: false,
+        unlock: "",
+        password: "",
+        folder: "相机",
+        favorite: false,
+        outgoing: false,
+        read: false,
+        likes: 0,
+        comments: [],
+      };
+      p.onUi?.("capturedPhotos", JSON.stringify([...captured, photo]));
+      setCameraError("已保存到模拟相册");
+    };
+    reader.onerror = () => setCameraError("无法读取照片，请检查浏览器权限后重试。");
+    reader.readAsDataURL(file);
+  };
   return (
     <div className="catalog-skin native-camera">
       <Header p={p} />
       <div className="camera-top">
-        <span>闪光灯关闭</span>
+        <span>设备相机 · 需你授权</span>
         <span>{mode === "视频" ? "HD · 30" : "4:3"}</span>
       </div>
       <div className="camera-view">
-        {frame ? <Media item={frame} /> : <p>未设置取景画面</p>}
+        {frame ? <Media item={frame} /> : <div className="camera-empty"><Camera size={34} /><p>准备好记录此刻了吗？</p><small>点击快门后，浏览器会请求相机或照片访问权限。</small></div>}
         <div className="camera-grid" />
       </div>
       <div className="camera-mode">
         {["视频", "照片"].map((m) => (
-          <button
-            className={mode === m ? "selected" : ""}
-            key={m}
-            onClick={() => {
-              setMode(m);
-              setIndex(0);
-            }}
-          >
-            {m}
-          </button>
+          <button className={mode === m ? "selected" : ""} key={m} onClick={() => { setMode(m); setIndex(0); }}>{m}</button>
         ))}
       </div>
       <div className="camera-controls">
-        <button
-          aria-label="查看上一画面"
-          disabled={!frames.length}
-          onClick={() => setIndex((i) => (i + 1) % frames.length)}
-        >
-          <Image size={24} />
-        </button>
-        <button
-          className="camera-shutter"
-          aria-label={p.creator ? "编辑拍摄画面" : "查看拍摄内容"}
-          disabled={!p.creator && !frame}
-          onClick={() => (p.creator ? p.onAdd() : frame && p.onItem(frame))}
-        >
-          <span />
-        </button>
-        <button
-          aria-label="切换取景画面"
-          disabled={frames.length < 2}
-          onClick={() => setIndex((i) => i + 1)}
-        >
-          <Camera size={24} />
-        </button>
+        <button aria-label="打开相册" onClick={() => inputRef.current?.click()}><Image size={24} /></button>
+        <button className="camera-shutter" aria-label={p.creator ? "编辑拍摄画面" : "拍摄照片"} onClick={() => (p.creator ? p.onAdd() : inputRef.current?.click())}><span /></button>
+        <button aria-label="查看最近拍摄" onClick={() => { if (captured.length) p.onItem(captured[captured.length - 1]); else if (frame) p.onItem(frame); else inputRef.current?.click(); }}><Camera size={24} /></button>
       </div>
-      <small className="camera-caption">作者设置的虚构取景内容</small>
+      <input
+        ref={inputRef}
+        className="camera-capture-input"
+        type="file"
+        accept="image/*"
+        capture="environment"
+        aria-label="使用设备相机拍照"
+        onChange={(event) => { capture(event.currentTarget.files?.[0]); event.currentTarget.value = ""; }}
+      />
+      {cameraError && <p className="camera-permission-note" role="status">{cameraError}</p>}
+      <small className="camera-caption">照片保存在此浏览器的模拟相册中；删除不会影响设备原照片。</small>
     </div>
   );
 }
