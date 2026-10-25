@@ -54,10 +54,10 @@ function StoryPlayer() {
               title: profile.stageName + " · 星光档案",
               phone: {
                 ...work.phone,
-                owner: profile.ownerName,
+                owner: profile.stageName,
                 passcode: profile.passcode,
                 theme: "dark",
-                wallpaper: "silver",
+                wallpaper: "black",
               },
               variables: {
                 ...work.variables,
