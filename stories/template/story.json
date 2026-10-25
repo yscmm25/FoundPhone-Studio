@@ -1,11 +1,11 @@
 {
   "scriptVersion": 1,
   "id": "ui-test-phone-v2",
-  "title": "捡手机",
-  "description": "仅用于界面测试，不含剧情",
-  "revision": 4,
+  "title": "女爱豆的手机",
+  "description": "K-pop 女爱豆手机模拟器：粉圈推特、七位知名粉丝与日常互动。",
+  "revision": 5,
   "phone": {
-    "owner": "机主",
+    "owner": "○○",
     "date": "2026-10-25",
     "time": "09:41",
     "battery": 94,
@@ -802,12 +802,426 @@
     ],
     "twitter": [
       {
-        "id": "test-item-twitter",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
+        "id": "tw-hyunjun-selfie",
+        "title": "hyunjun_nujnuyh",
+        "body": "碎叫碎叫🥱📸",
+        "sender": "hyunjun_nujnuyh",
+        "time": "2026-06-26 14:42",
+        "kind": "post",
+        "likes": 500,
+        "comments": [
+          "MgCl₂－○8○5：今天吃：御好烧",
+          "唯○主义：你知道这个月我接了多少广告！盘点那些○○笑到想把全部给你的男孩子",
+          "hyunjun_nujnuyh：爸妈",
+          "loveis○○：我求你没用。",
+          "○○的狗：男爱豆下众生平等"
+        ],
+        "meta": {
+          "handle": "@0212_6002",
+          "bio": "此号只上传追星/日常 推广请@hyunjun_0212。\n我是梦男怎么你了^_^ 主人：○○ 妈妈：○○ 老婆：○○",
+          "following": "60",
+          "followers": "3,000",
+          "views": "1000",
+          "reposts": "75",
+          "media": ""
+        }
+      },
+      {
+        "id": "tw-hamin-food",
+        "title": "MgCl₂－○8○5",
+        "body": "今天吃：御好烧\n正片指路🔗 Hanmin.com\n明天停更🙏",
+        "sender": "MgCl₂－○8○5",
+        "time": "2026-06-26 15:07",
+        "kind": "post",
+        "likes": 0,
+        "comments": [
+          "jae_won：看着真不是福寿石玩的。",
+          "唯○主义：刚从正片回来，食物像水一样进入胃里了",
+          "Sada🌸haru：哦一西～哦一西～",
+          "Bluesharkwith○○：看着好好吃啊 等下！明天停更不会是…我有预感",
+          "MgCl₂－○8○5：没错^_^",
+          "MgCl₂－○8○5：你也是幸福上了^5^"
+        ],
+        "meta": {
+          "handle": "@hahamin85",
+          "bio": "美食和○○一级爱好者💗\n吃播号@hamin-0805",
+          "following": "20",
+          "followers": "3,000",
+          "views": "100",
+          "reposts": "0"
+        }
+      },
+      {
+        "id": "tw-songha-bubble",
+        "title": "song for ○○",
+        "body": "【🔔叮咚！你的泡泡好友○○来信啦💌】\n刚到宿舍就和粉丝报信的好宝🫳🏻\n睡个好觉🥺\nBUBBLE ○○ is coming",
+        "sender": "song for ○○",
+        "time": "2026-06-26 04:10",
+        "kind": "post",
+        "likes": 2000,
+        "comments": [
+          "nameunknown：满分不解释",
+          "hyunjun_nujnuyh：有没有比宇宙更大的东西我要送给○○",
+          "woo_lin：有没有比宇宙更大的东西我要送给○○",
+          "hyunjun_nujnuyh：排队。",
+          "Cakett_：好啦啊我宝，松哥一天24小时有23小时都在看手机吧！",
+          "song for ○○：ㅋㅋㅋ其实猜到○○落地就会发的",
+          "loveis○○：○○宝宝是天使来的",
+          "Nich - ○○ -las：明天就能见到○○了ㅠㅠ"
+        ],
+        "meta": {
+          "handle": "@_0419",
+          "bio": "仅拌匀",
+          "following": "3",
+          "followers": "9,000",
+          "views": "4000",
+          "reposts": "300"
+        }
+      },
+      {
+        "id": "tw-nicholas-selfie",
+        "title": "Nich - ○○ -las",
+        "body": "○○明天见 Have a good night🌙\n[照片：躺在枕头上的自拍]",
+        "sender": "Nich - ○○ -las",
+        "time": "2026-06-26 02:55",
+        "kind": "post",
+        "likes": 0,
+        "comments": [
+          "唯○主义：美国哥又要幸福了…世界多我一个有钱人会怎样！",
+          "理理大王：见到了。这些同担到底哪来这么多钱",
+          "hyunjun_nujnuyh：早点睡吧大哥 明天别顶着黑眼圈见到我们○○了",
+          "Nich - ○○ -las：上次○○说无论我什么样都喜欢🥺",
+          "MgCl₂－○8○5：○○帽个粉还真把自己当菜了",
+          "Nich - ○○ -las：谢谢你！可免费带话 私信我吧"
+        ],
+        "meta": {
+          "handle": "@Lee1227",
+          "bio": "just普通追星男 搬视频请找我授权",
+          "following": "5",
+          "followers": "4,000",
+          "views": "100",
+          "reposts": "0",
+          "media": ""
+        }
+      },
+      {
+        "id": "tw-hanbi-art",
+        "title": "Bluesharkwith○○",
+        "body": "摸张没睡醒的○○\n参考的蛋师拍的机场图\n🔗 book of ○○.com\n[图片：○○机场图同人画]",
+        "sender": "Bluesharkwith○○",
+        "time": "2026-06-26 03:29",
+        "kind": "post",
+        "likes": 500,
+        "comments": [
+          "Sada🌸haru：老师你确定这是什么都看不见",
+          "Bluesharkwith○○：因为神本无形。",
+          "book of ○○：我去老师你也太快了",
+          "hyunjun_nujnuyh：我怀疑这个女孩是天使",
+          "ジェイ：すごい！好厉害！",
+          "song for ○○：特别萌的○○小猫🥺"
+        ],
+        "meta": {
+          "handle": "@hanbi1024",
+          "bio": "随便画点谢谢喜欢^_^ 禁商用二改ai 约稿请私信",
+          "following": "20",
+          "followers": "5,000",
+          "views": "1000",
+          "reposts": "75"
+        }
+      },
+      {
+        "id": "tw-jayjay-class",
+        "title": "ジェイ",
+        "body": "下课✌🏻\n下周我不在舞室，来找我上课的朋友们不要跑空啦🙏🏻\n预约指路🔗 Studio J.T.com\n[照片：舞室镜自拍]",
+        "sender": "ジェイ",
+        "time": "2026-06-26 15:42",
+        "kind": "post",
+        "likes": 260,
+        "comments": [
+          "ハルタ：我好不容易抢到下周的课啊啊啊",
+          "ジェイ：非常抱歉🙏🏻下次来上课提前享受八折优惠",
+          "loveis○○：jay桑也要去签售吗？",
+          "唯○主义：前几天直播说这周末有舞比赛去不了来着，应该是下周去回归吧？",
+          "ジェイ：🙏🏻"
+        ],
+        "meta": {
+          "handle": "@Justinjay2",
+          "bio": "Studio J.T（suki○○）\nKomachik,OSAKA, 006-127, Japan\nMore See Translation♡ Studio J.T.com",
+          "following": "100",
+          "followers": "5,500",
+          "views": "520",
+          "reposts": "39"
+        }
+      },
+      {
+        "id": "tw-daniel-airport",
+        "title": "book of ○○",
+        "body": "260625 ICN\n困困的○○🥺\n[图片：机场高清图]",
+        "sender": "book of ○○",
+        "time": "2026-06-26 02:18",
+        "kind": "post",
+        "likes": 1000,
+        "comments": [
+          "我女○○（被○○饭撒版）：我女好萌吧啊啊啊",
+          "hyunjun_nujnuyh：怎么我女神刚睡醒的样子也这么美",
+          "唯○主义：提到新鲜的梦男一枚",
+          "hyunjun_nujnuyh：我不是梦男！只是我的妻子刚好是idol！",
+          "song for ○○：凌晨就出发的○○辛苦了🥺蛋师也辛苦了",
+          "MgCl₂－○8○5：宝宝这么早出发肯定还没吃饭TT 老师能把我家孩子吃饭的视频拍来看看吗",
+          "Cakett_：啊啊啊 蛋师你最喜欢你拍的图了！辛苦了！○○好美吧！"
+        ],
+        "meta": {
+          "handle": "@D_ielllll",
+          "bio": "○○’s photo archive🦋",
+          "following": "0",
+          "followers": "6,500",
+          "views": "2000",
+          "reposts": "150"
+        }
+      },
+      {
+        "id": "tw-hanbi-commissions",
+        "title": "Bluesharkwith○○",
+        "body": "最近好寡…○粉咋熬的",
+        "sender": "Bluesharkwith○○",
+        "time": "2026-06-26 12:56",
+        "kind": "post",
+        "likes": 60,
+        "comments": [
+          "loveis○○：看之前的物料，求一键快进到下周回归教程。",
+          "Bluesharkwith○○：我也。",
+          "唯○主义：在看○○的七大梦男罗，比○○她们团综好看，打过来我先跑了",
+          "○○的狗：点了。",
+          "MgCl₂－○8○5：plq说的七大梦男是什么啊 刚入坑没多久求指路🥺",
+          "唯○主义：宝宝我来！账号po在下面了，从上到下依次是：松哥（拌匀大粉，从○○练习生就开始追了，○圈最宽容的父亲…），蛋师（站哥…），蓝鲨老师（同人产出…），签售哥…，hyunjun…，美团哥…，85哥…，jay桑…",
+          "Bluesharkwith○○：满分不解释"
+        ],
+        "meta": {
+          "handle": "@hanbi1024",
+          "bio": "随便画点谢谢喜欢^_^ 禁商用二改ai 约稿请私信",
+          "following": "20",
+          "followers": "5,000",
+          "views": "120",
+          "reposts": "9"
+        }
+      },
+      {
+        "id": "tw-hyunjun-wife",
+        "title": "hyunjun_nujnuyh",
+        "body": "此号只上传追星/日常 推广请@hyunjun_0212。\n我是梦男怎么你了^_^ 主人：○○ 妈妈：○○ 老婆：○○",
+        "sender": "hyunjun_nujnuyh",
+        "time": "2026-06-26 11:26",
+        "kind": "post",
+        "likes": 700,
+        "comments": [
+          "唯○主义：你也去？你去吧！我们在屏幕外面一点也不苦！",
+          "hyunjun_nujnuyh：你知道这个月我接了多少广告！盘点那些○○笑到想把全部给你的男孩子",
+          "Cakett_：爸妈。",
+          "loveis○○：我求你没用。",
+          "nameunknown：我懂你。",
+          "woo_lin：我懂你。",
+          "理理大王：找韩国代打。"
+        ],
+        "meta": {
+          "handle": "@0212_6002",
+          "bio": "此号只上传追星/日常 推广请@hyunjun_0212。\n我是梦男怎么你了^_^ 主人：○○ 妈妈：○○ 老婆：○○",
+          "following": "60",
+          "followers": "3,000",
+          "views": "1400",
+          "reposts": "105"
+        }
+      },
+      {
+        "id": "tw-hamin-nightfood",
+        "title": "MgCl₂－○8○5",
+        "body": "85哥一想到明天○○见面，mer一声就开始埋头吃起了",
+        "sender": "MgCl₂－○8○5",
+        "time": "2026-06-26 15:25",
+        "kind": "post",
+        "likes": 25,
+        "comments": [
+          "MgCl₂－○8○5：人心中的成见是一顿大餐",
+          "jae_won：回家吃吗？",
+          "唯○主义：弦哥",
+          "Ta_Ta：明天能不能不要停更…没有85吃播的日子我过不了。",
+          "MgCl₂－○8○5：感谢支持🙏但是明天○○我只吃一顿沙拉"
+        ],
+        "meta": {
+          "handle": "@hahamin85",
+          "bio": "美食和○○一级爱好者💗\n吃播号@hamin-0805",
+          "following": "20",
+          "followers": "3,000",
+          "views": "100",
+          "reposts": "4"
+        }
+      },
+      {
+        "id": "tw-songha-quiet",
+        "title": "song for ○○",
+        "body": "○○明天见 Have a good night🌙",
+        "sender": "song for ○○",
+        "time": "2026-06-26 23:41",
+        "kind": "post",
+        "likes": 199,
+        "comments": [
+          "ハルタ：如果我是○○谁又是我的song for ○○",
+          "MgCl₂－○8○5：给你at了 @hyunjun_nujnuyh",
+          "loveis○○：○○宝宝是天使来的",
+          "Nich - ○○ -las：明天就能见到○○了ㅠㅠ"
+        ],
+        "meta": {
+          "handle": "@_0419",
+          "bio": "仅拌匀",
+          "following": "3",
+          "followers": "9,000",
+          "views": "398",
+          "reposts": "30"
+        }
+      },
+      {
+        "id": "tw-daniel-archive",
+        "title": "book of ○○",
+        "body": "○○的泡泡截图存档🦋\n今天也辛苦了，早点休息。",
+        "sender": "book of ○○",
+        "time": "2026-06-26 00:18",
+        "kind": "post",
+        "likes": 148,
+        "comments": [
+          "唯○主义：蛋师每次○○都只搞笑了",
+          "Daniel：我这次学了很多新东西。",
+          "kassh○○：虹仁猪心。命令你给我带话",
+          "Daniel：谢谢你！可免费带话 私信我吧"
+        ],
+        "meta": {
+          "handle": "@D_ielllll",
+          "bio": "○○’s photo archive🦋",
+          "following": "0",
+          "followers": "6,500",
+          "views": "296",
+          "reposts": "22"
+        }
+      },
+      {
+        "id": "tw-jayjay-dance",
+        "title": "ジェイ",
+        "body": "○○她们上次回归的舞蹈跳起来真的很好看。动作很入坑，小号经常发翻跳视频，想扒舞的可以入",
+        "sender": "ジェイ",
+        "time": "2026-06-26 18:06",
+        "kind": "post",
+        "likes": 80,
+        "comments": [
+          "loveis○○：jay桑也要去签售吗？",
+          "唯○主义：上次直播说这周末有舞比赛去不了来着。",
+          "ジェイ：下次来上课提前享受八折优惠🙏🏻"
+        ],
+        "meta": {
+          "handle": "@Justinjay2",
+          "bio": "Studio J.T（suki○○）\nKomachik,OSAKA, 006-127, Japan\nMore See Translation♡ Studio J.T.com",
+          "following": "100",
+          "followers": "5,500",
+          "views": "160",
+          "reposts": "12"
+        }
+      },
+      {
+        "id": "tw-nicholas-ticket",
+        "title": "Nich - ○○ -las",
+        "body": "just普通追星男 搬视频请找我授权。\n能接爱豆相关的多的话，私信我吧。",
+        "sender": "Nich - ○○ -las",
+        "time": "2026-06-26 17:20",
+        "kind": "post",
+        "likes": 199,
+        "comments": [
+          "唯○主义：美国哥又要幸福了…世界多我一个有钱人会怎样！",
+          "Nich - ○○ -las：谢谢你！可免费带话 私信我吧",
+          "MgCl₂－○8○5：○○帽个粉还真把自己当菜了"
+        ],
+        "meta": {
+          "handle": "@Lee1227",
+          "bio": "just普通追星男 搬视频请找我授权",
+          "following": "5",
+          "followers": "4,000",
+          "views": "398",
+          "reposts": "30"
+        }
+      },
+      {
+        "id": "tw-fanbubble",
+        "title": "nameunknown",
+        "body": "最近好寡…○粉咋熬的",
+        "sender": "nameunknown",
+        "time": "2026-06-26 12:56",
+        "kind": "post",
+        "likes": 60,
+        "comments": [
+          "loveis○○：看之前的物料，求一键快进到下周回归教程。",
+          "nameunknown：我也。",
+          "唯○主义：在看○○的七大梦男罗，比○○她们团综好看",
+          "○○的狗：点了。"
+        ],
+        "meta": {
+          "handle": "@shu0-0",
+          "bio": "",
+          "following": "0",
+          "followers": "100",
+          "views": "120",
+          "reposts": "9"
+        }
+      },
+      {
+        "id": "tw-reply-thread-extra",
+        "title": "我女○○（被○○饭撒版）",
+        "body": "蹲。",
+        "sender": "我女○○（被○○饭撒版）",
+        "time": "2026-06-26 16:18",
+        "kind": "post",
+        "likes": 119,
+        "comments": [
+          "Cakett_：入住。",
+          "ハルタ：入住",
+          "唯○主义：宝宝我来！"
+        ]
+      },
+      {
+        "id": "tw-other-fan-post",
+        "title": "唯○主义",
+        "body": "在看○○的七大梦男罗，比○○她们团综好看，打过来我先跑了",
+        "sender": "唯○主义",
+        "time": "2026-06-26 16:02",
+        "kind": "post",
+        "likes": 38,
+        "comments": [
+          "nameunknown：我懂你。",
+          "MgCl₂－○8○5：弦哥",
+          "Nich - ○○ -las：明天见"
+        ]
+      },
+      {
+        "id": "tw-photo-post",
+        "title": "book of ○○",
+        "body": "260625 ICN\n困困的○○🥺\n[图片：机场高清图]",
+        "sender": "book of ○○",
+        "time": "2026-06-26 02:18",
+        "kind": "post",
+        "likes": 1000,
+        "comments": [
+          "我女○○（被○○饭撒版）：我女好萌吧啊啊啊",
+          "hyunjun_nujnuyh：怎么我女神刚睡醒的样子也这么美",
+          "song for ○○：凌晨就出发的○○辛苦了🥺"
+        ]
+      },
+      {
+        "id": "tw-hyunjun-fanboy",
+        "title": "hyunjun_nujnuyh",
+        "body": "我不是梦男！只是我的妻子刚好是idol！",
+        "sender": "hyunjun_nujnuyh",
+        "time": "2026-06-26 02:32",
+        "kind": "post",
+        "likes": 19,
+        "comments": [
+          "唯○主义：我的发病群艺高人胆大了。",
+          "nameunknown：我懂你。"
+        ]
       }
     ],
     "youtube": [
