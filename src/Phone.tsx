@@ -323,7 +323,7 @@ function PhoneRuntime({
   return (
     <div
       ref={shell}
-      style={{ "--phone-scale": deviceScale } as CSSProperties}
+      style={{ "--phone-scale": deviceScale, "--support-color": String(work.variables.player_support_color ?? "#c8c9d2") } as CSSProperties}
       className={`phone-shell ios18 ${work.phone.theme === "dark" ? "dark-phone" : ""}`}
     >
       <KeyboardContext.Provider value={setKeyboard}>
