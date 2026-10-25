@@ -326,7 +326,7 @@ export function CameraSkin(p: Props) {
         <span>{mode === "视频" ? "HD · 30" : "4:3"}</span>
       </div>
       <div className="camera-view">
-        {frame ? <Media item={frame} /> : <div className="camera-empty"><Camera size={34} /><p>准备好记录此刻了吗？</p><small>点击快门后，浏览器会请求相机或照片访问权限。</small></div>}
+        {(captured[captured.length - 1] ?? frame) ? <Media item={(captured[captured.length - 1] ?? frame)!} /> : <div className="camera-empty"><Camera size={34} /><p>准备好记录此刻了吗？</p><small>点击快门后，浏览器会请求相机或照片访问权限。</small></div>}
         <div className="camera-grid" />
       </div>
       <div className="camera-mode">
