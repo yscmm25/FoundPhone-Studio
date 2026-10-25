@@ -33,7 +33,7 @@ export function ProfileSetup({ onComplete }: { onComplete: (profile: IdolProfile
       setError("请填写本名与艺名，让档案完整一些。");
       return;
     }
-    if (!/^\\d{4,6}$/.test(passcode)) {
+    if (!/^\d{4,6}$/.test(passcode)) {
       setError("请设置 4–6 位数字密码。");
       return;
     }
@@ -58,7 +58,7 @@ export function ProfileSetup({ onComplete }: { onComplete: (profile: IdolProfile
         <div className="idol-monogram">✳</div>
         <p className="idol-kicker">YOUR STORY BEGINS HERE</p>
         <h1>欢迎来到你的<br /><em>星光档案</em></h1>
-        <p className="idol-intro">从此刻起，你是故事的主角。建立你的艺人身份，七位特别的粉丝将逐渐走进你的生活。</p>
+        <p className="idol-intro">从此刻起，你是故事的主角。先建立你的艺人身份，手机里的故事内容由你亲自逐一填写。</p>
         <form onSubmit={submit}>
           <div className="idol-field-grid">
             <label>机主姓名<input autoComplete="name" value={ownerName} onChange={e => setOwnerName(e.target.value)} placeholder="你的真实姓名" maxLength={40} required /></label>
@@ -71,8 +71,8 @@ export function ProfileSetup({ onComplete }: { onComplete: (profile: IdolProfile
           </fieldset>
           <div className="idol-passcode-heading"><span>设置手机锁屏密码</span><small>与 iPhone 数字密码体验一致</small></div>
           <div className="idol-field-grid">
-            <label>新密码<input type="password" inputMode="numeric" autoComplete="new-password" pattern="[0-9]{4,6}" minLength={4} maxLength={6} value={passcode} onChange={e => setPasscode(e.target.value.replace(/\\D/g, "").slice(0, 6))} placeholder="4–6 位数字" required /></label>
-            <label>确认密码<input type="password" inputMode="numeric" autoComplete="new-password" pattern="[0-9]{4,6}" minLength={4} maxLength={6} value={confirm} onChange={e => setConfirm(e.target.value.replace(/\\D/g, "").slice(0, 6))} placeholder="再次输入" required /></label>
+            <label>新密码<input type="password" inputMode="numeric" autoComplete="new-password" pattern="[0-9]{4,6}" minLength={4} maxLength={6} value={passcode} onChange={e => setPasscode(e.target.value.replace(/\D/g, "").slice(0, 6))} placeholder="4–6 位数字" required /></label>
+            <label>确认密码<input type="password" inputMode="numeric" autoComplete="new-password" pattern="[0-9]{4,6}" minLength={4} maxLength={6} value={confirm} onChange={e => setConfirm(e.target.value.replace(/\D/g, "").slice(0, 6))} placeholder="再次输入" required /></label>
           </div>
           {error && <p className="idol-form-error" role="alert">{error}</p>}
           <button className="idol-start-button" type="submit">创建我的档案 <span>↗</span></button>
