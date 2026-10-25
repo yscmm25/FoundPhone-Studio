@@ -28,3 +28,10 @@
 .idol-form-error{margin:0;color:#ff9eae;font-size:11px}
 .idol-setup-footer{margin-top:auto}
 @media(max-width:430px){.idol-setup{padding:18px 13px 15px}.idol-setup-card{margin:26px auto 24px;padding:25px 17px 22px}.idol-field-grid{gap:8px}.idol-colors{gap:6px}.idol-colors button{padding:8px 5px;font-size:9px}.idol-setup-topline,.idol-setup-footer{font-size:8px;letter-spacing:1px}}
+
+.idol-avatar-editor{display:flex;align-items:center;gap:15px;padding:14px;border:1px solid #ffffff18;border-radius:13px;background:#ffffff04}
+.idol-avatar-preview{width:66px;height:66px;flex:none;border-radius:50%;display:grid;place-items:center;overflow:hidden;border:1px solid #ffffff2b;background-color:#17151b;background-size:cover;background-position:center;color:#d4c1ee;font-size:24px}
+.idol-avatar-actions{display:flex;flex-direction:column;align-items:flex-start;gap:9px;color:#c7c1cd;font-size:11px}
+.idol-avatar-actions strong small{display:block;margin-top:4px;color:#77717e;font:8px "DM Sans",sans-serif;letter-spacing:1px}
+.idol-avatar-actions button{padding:8px 10px;border:1px solid #ffffff20;border-radius:8px;background:#ffffff08;color:#e4d9f0;font-size:10px}
+.idol-hidden-file{display:none!important}
