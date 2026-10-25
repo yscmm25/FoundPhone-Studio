@@ -63,6 +63,7 @@ import {
   type UiValue,
 } from "./schema";
 import { dispatch, choose, visible, advance } from "./engine";
+import { movedBeyondThreshold } from "./phone-gestures";
 import { db } from "./persistence";
 export function AppIcon({
   id,
@@ -145,7 +146,14 @@ function PhoneRuntime({
   const [contextApp, setContextApp] = useState("");
   const [deviceScale, setDeviceScale] = useState(0.84);
   const shell = useRef<HTMLDivElement>(null);
-  const gesture = useRef({ x: 0, y: 0, time: 0, zone: "" });
+  const gesture = useRef({
+    x: 0,
+    y: 0,
+    clientX: 0,
+    clientY: 0,
+    time: 0,
+    zone: "",
+  });
   const [launchOrigin, setLaunchOrigin] = useState(screenOrigin);
 
   const beginUnlock = () => {
@@ -167,20 +175,22 @@ function PhoneRuntime({
   useEffect(() => {
     const el = shell.current;
     if (!el) return;
+    const parent = el.parentElement;
+    if (!parent) return;
     const fit = () => {
       setDeviceScale(
         Math.max(
           0.4,
           Math.min(
             1,
-            (el.parentElement!.clientWidth - 24) / 407,
+            (parent.clientWidth - 24) / 407,
             (window.innerHeight - (creator ? 170 : external ? 150 : 40)) / 866,
           ),
         ),
       );
     };
     const observer = new ResizeObserver(fit);
-    observer.observe(el.parentElement!);
+    observer.observe(parent);
     window.addEventListener("resize", fit);
     fit();
     return () => {
@@ -338,13 +348,25 @@ function PhoneRuntime({
             gesture.current = {
               x,
               y,
+              clientX: e.clientX,
+              clientY: e.clientY,
               time: Date.now(),
               zone: y < 58 ? "top" : y > 818 ? "bottom" : locked ? "lock" : "",
             };
           }}
           onPointerMove={(e) => {
-            if (Math.abs(e.movementX) > 5 || Math.abs(e.movementY) > 5)
+            const start = gesture.current;
+            if (
+              movedBeyondThreshold(
+                start.clientX,
+                start.clientY,
+                e.clientX,
+                e.clientY,
+                deviceScale,
+              )
+            ) {
               clearTimeout(pressTimer.current);
+            }
           }}
           onPointerCancel={() => clearTimeout(pressTimer.current)}
           onPointerUp={(e) => {
