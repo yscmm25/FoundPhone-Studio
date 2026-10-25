@@ -750,3 +750,6 @@
 .ios18 .wallpaper-black .lock-clock-block p{color:#c8c1d2}
 .ios18 .wallpaper-black .lock-tools button{border-color:#ffffff2a}
 .ios18 .phone-shell{--phone-support-color:var(--support-color,#c8c9d2)}
+
+.ios18 .wallpaper-black .lock-clock-block > svg{color:var(--phone-support-color,var(--support-color,#c8c9d2))}
+.ios18 .wallpaper-black .lock-tools button{color:var(--phone-support-color,var(--support-color,#c8c9d2))}
