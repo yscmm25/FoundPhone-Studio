@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机",
   "description": "仅用于界面测试，不含剧情",
-  "revision": 2,
+  "revision": 3,
   "phone": {
     "owner": "机主",
     "date": "2026-10-25",
@@ -93,6 +93,72 @@
       "name": "测试联系人",
       "phone": "",
       "bio": "这是一条测试内容。"
+    },
+    {
+      "id": "hanbi",
+      "name": "Hanbi",
+      "phone": "",
+      "bio": ""
+    },
+    {
+      "id": "songha",
+      "name": "Songha",
+      "phone": "",
+      "bio": ""
+    },
+    {
+      "id": "nicholas",
+      "name": "Nicholas",
+      "phone": "",
+      "bio": ""
+    },
+    {
+      "id": "daniel",
+      "name": "Daniel",
+      "phone": "",
+      "bio": ""
+    },
+    {
+      "id": "hyunjun",
+      "name": "Hyunjun",
+      "phone": "",
+      "bio": ""
+    },
+    {
+      "id": "jayjay",
+      "name": "Jayjay",
+      "phone": "",
+      "bio": ""
+    },
+    {
+      "id": "hamin",
+      "name": "Hamin",
+      "phone": "",
+      "bio": ""
+    },
+    {
+      "id": "manager",
+      "name": "经纪人",
+      "phone": "",
+      "bio": ""
+    },
+    {
+      "id": "mom",
+      "name": "妈妈",
+      "phone": "",
+      "bio": ""
+    },
+    {
+      "id": "friend-a",
+      "name": "朋友A",
+      "phone": "",
+      "bio": ""
+    },
+    {
+      "id": "teammate-a",
+      "name": "队友A",
+      "phone": "",
+      "bio": ""
     }
   ],
   "chats": [
@@ -244,6 +310,116 @@
           "senderId": "owner"
         }
       ]
+    },
+    {
+      "id": "kakao-hanbi",
+      "app": "kakao",
+      "title": "Hanbi",
+      "participants": [
+        "owner",
+        "hanbi"
+      ],
+      "messages": []
+    },
+    {
+      "id": "kakao-songha",
+      "app": "kakao",
+      "title": "Songha",
+      "participants": [
+        "owner",
+        "songha"
+      ],
+      "messages": []
+    },
+    {
+      "id": "kakao-nicholas",
+      "app": "kakao",
+      "title": "Nicholas",
+      "participants": [
+        "owner",
+        "nicholas"
+      ],
+      "messages": []
+    },
+    {
+      "id": "kakao-daniel",
+      "app": "kakao",
+      "title": "Daniel",
+      "participants": [
+        "owner",
+        "daniel"
+      ],
+      "messages": []
+    },
+    {
+      "id": "kakao-hyunjun",
+      "app": "kakao",
+      "title": "Hyunjun",
+      "participants": [
+        "owner",
+        "hyunjun"
+      ],
+      "messages": []
+    },
+    {
+      "id": "kakao-jayjay",
+      "app": "kakao",
+      "title": "Jayjay",
+      "participants": [
+        "owner",
+        "jayjay"
+      ],
+      "messages": []
+    },
+    {
+      "id": "kakao-hamin",
+      "app": "kakao",
+      "title": "Hamin",
+      "participants": [
+        "owner",
+        "hamin"
+      ],
+      "messages": []
+    },
+    {
+      "id": "kakao-manager",
+      "app": "kakao",
+      "title": "经纪人",
+      "participants": [
+        "owner",
+        "manager"
+      ],
+      "messages": []
+    },
+    {
+      "id": "kakao-mom",
+      "app": "kakao",
+      "title": "妈妈",
+      "participants": [
+        "owner",
+        "mom"
+      ],
+      "messages": []
+    },
+    {
+      "id": "kakao-friend-a",
+      "app": "kakao",
+      "title": "朋友A",
+      "participants": [
+        "owner",
+        "friend-a"
+      ],
+      "messages": []
+    },
+    {
+      "id": "kakao-teammate-a",
+      "app": "kakao",
+      "title": "队友A",
+      "participants": [
+        "owner",
+        "teammate-a"
+      ],
+      "messages": []
     }
   ],
   "content": {
