@@ -741,3 +741,12 @@
   background: #fafafa;
   color: #ffadb7;
 }
+
+/* Idol simulator's minimal black lock-screen wallpaper; app surfaces keep their own skins. */
+.ios18 .wallpaper-black{background:#050506;color:#f7f4f9}
+.ios18 .wallpaper-black .status-bar{color:#f7f4f9}
+.ios18 .wallpaper-black .device-lock{background:#050506;color:#f7f4f9}
+.ios18 .wallpaper-black .lock-clock-block h1{color:#f7f4f9}
+.ios18 .wallpaper-black .lock-clock-block p{color:#c8c1d2}
+.ios18 .wallpaper-black .lock-tools button{border-color:#ffffff2a}
+.ios18 .phone-shell{--phone-support-color:var(--support-color,#c8c9d2)}
