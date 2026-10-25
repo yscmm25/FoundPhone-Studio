@@ -4131,7 +4131,6 @@
   display: none;
 }
 
-
 /* Device-camera capture and locally saved gallery photos. */
 .native-camera .camera-empty{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;width:100%;height:100%;box-sizing:border-box;padding:24px;text-align:center;color:#d8d8df;background:radial-gradient(ellipse at 50% 40%,#25252d,#09090c 72%)}
 .native-camera .camera-empty p{margin:0;font-size:14px}

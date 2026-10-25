@@ -1,215 +1,30 @@
-.idol-setup {
-  --profile-accent: #d8c6ef;
-  position: relative;
-  isolation: isolate;
-  min-height: 100dvh;
-  width: 100%;
-  overflow: auto;
-  background: #050506;
-  color: #f5f2ed;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 26px 22px 20px;
-  font-family: "Noto Serif SC", "Songti SC", "STSong", Georgia, serif;
-}
-.idol-setup-glow {
-  position: absolute;
-  z-index: -1;
-  pointer-events: none;
-  width: 440px;
-  height: 440px;
-  top: -260px;
-  left: calc(50% - 220px);
-  border-radius: 50%;
-  background: radial-gradient(circle, #b8a1df20 0%, transparent 70%);
-}
-.idol-setup-topline, .idol-setup-footer {
-  width: min(100%, 520px);
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  color: #77727e;
-  font: 9px/1.6 Inter, -apple-system, sans-serif;
-  letter-spacing: 1.5px;
-}
-.idol-setup-card {
-  position: relative;
-  width: min(100%, 520px);
-  box-sizing: border-box;
-  margin: 34px auto 30px;
-  padding: 34px clamp(20px, 5vw, 42px) 28px;
-  border: 1px solid #ffffff17;
-  border-radius: 22px;
-  background: linear-gradient(145deg, #111113f5, #09090af7);
-  box-shadow: 0 30px 90px #0008, inset 0 1px #ffffff08;
-}
-.idol-monogram, .idol-lock-emblem {
-  width: 45px;
-  height: 45px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  border: 1px solid #c8b9df66;
-  color: #d4c1ee;
-}
-.idol-kicker {
-  margin: 24px 0 10px;
-  color: #b5a4d0;
-  font: 9px Inter, -apple-system, sans-serif;
-  letter-spacing: 2.2px;
-}
-.idol-setup h1 {
-  margin: 0;
-  font-size: clamp(29px, 6vw, 40px);
-  font-weight: 400;
-  line-height: 1.42;
-  letter-spacing: .5px;
-}
-.idol-setup h1 em { font-style: normal; color: #d4c1ee; }
-.idol-intro {
-  max-width: 380px;
-  margin: 14px 0 27px;
-  color: #98939f;
-  font-size: 12px;
-  line-height: 1.95;
-}
-.idol-profile-form { display: flex; flex-direction: column; gap: 17px; }
-.idol-field-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-.idol-setup label {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  color: #d4ced9;
-  font-size: 12px;
-}
-.idol-setup label > span, .idol-color-field legend > span {
-  color: #77717e;
-  font: 8px Inter, -apple-system, sans-serif;
-  letter-spacing: 1.1px;
-}
-.idol-setup input, .idol-setup select {
-  width: 100%;
-  min-width: 0;
-  box-sizing: border-box;
-  background: #ffffff07;
-  border: 1px solid #ffffff1b;
-  border-radius: 10px;
-  padding: 12px 13px;
-  color: #f5f2ed;
-  font: 12px Inter, "Noto Serif SC", serif;
-  outline: none;
-}
-.idol-setup input:focus, .idol-setup select:focus {
-  border-color: #b9a1db;
-  box-shadow: 0 0 0 3px #b9a1db17;
-}
-.idol-setup input::placeholder { color: #625e69; }
-.idol-setup select option { background: #111; color: #fff; }
-.idol-color-field { padding: 0; border: 0; margin: 0; min-width: 0; }
-.idol-color-field legend { margin-bottom: 10px; color: #d4ced9; font-size: 12px; }
-.idol-color-field legend > span { display: block; margin-top: 5px; }
-.idol-colors { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
-.idol-colors button {
-  min-width: 0;
-  min-height: 39px;
-  padding: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 7px;
-  border: 1px solid #ffffff16;
-  border-radius: 9px;
-  background: #ffffff05;
-  color: #a9a3af;
-  font: 10px Inter, "Noto Serif SC", serif;
-}
-.idol-colors button.selected { border-color: #c9b5e7; background: #c9b5e711; color: #f4ecff; }
-.idol-color-swatch { width: 12px; height: 12px; flex: none; border-radius: 50%; box-shadow: 0 0 0 2px #ffffff12; }
-.idol-colors button svg { margin-left: auto; flex: none; }
-.idol-start-button {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 2px;
-  padding: 14px 16px;
-  border: 1px solid #d7c4f0;
-  border-radius: 10px;
-  background: #d8c6ef;
-  color: #17121e;
-  font: 12px Inter, "Noto Serif SC", serif;
-  font-weight: 600;
-}
-.idol-privacy-note { margin: 0; color: #6f6a76; font: 9px/1.8 Inter, "Noto Serif SC", serif; }
-.idol-form-error { margin: 0; color: #ff9eae; font: 11px/1.7 Inter, "Noto Serif SC", serif; }
-.idol-setup-footer { margin-top: auto; }
-.idol-passcode-card { text-align: center; }
-.idol-back-button {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  padding: 0;
-  color: #a9a1b4;
-  font: 10px Inter, -apple-system, sans-serif;
-}
-.idol-lock-emblem { margin: 28px auto 0; width: 52px; height: 52px; }
-.idol-passcode-card .idol-kicker { margin-top: 20px; }
-.idol-passcode-intro { margin: 10px auto 25px; }
-.idol-passcode-dots { display: flex; justify-content: center; gap: 17px; margin: 28px 0 24px; }
-.idol-passcode-dots span {
-  width: 11px;
-  height: 11px;
-  border: 1px solid #8e849d;
-  border-radius: 50%;
-  transition: background .16s, border-color .16s, transform .16s;
-}
-.idol-passcode-dots span.filled { background: #d4c1ee; border-color: #d4c1ee; transform: scale(1.04); }
-.idol-passcode-length { display: flex; justify-content: center; gap: 7px; margin-bottom: 22px; }
-.idol-passcode-length button {
-  padding: 6px 10px;
-  border: 1px solid #ffffff15;
-  border-radius: 20px;
-  color: #827b8b;
-  font: 9px Inter, sans-serif;
-}
-.idol-passcode-length button.selected { border-color: #c9b5e7aa; color: #e6d8f7; background: #c9b5e711; }
-.idol-keypad {
-  width: min(100%, 290px);
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px 19px;
-}
-.idol-keypad button {
-  justify-self: center;
-  width: 66px;
-  height: 66px;
-  border-radius: 50%;
-  border: 1px solid #ffffff18;
-  background: #ffffff08;
-  color: #f5f2ed;
-  transition: background .12s, border-color .12s, transform .12s;
-}
-.idol-keypad button:active { background: #d4c1ee25; border-color: #d4c1ee88; transform: scale(.96); }
-.idol-keypad button > span { font: 25px/1 Inter, -apple-system, sans-serif; font-weight: 300; }
-.idol-keypad .idol-keypad-delete { border-color: transparent; background: transparent; color: #a9a1b4; }
-.idol-keypad-error { margin-top: 18px; }
-.idol-passcode-note { max-width: 330px; margin: 20px auto 0; }
-@media (max-width: 430px) {
-  .idol-setup { padding: 18px 13px 15px; }
-  .idol-setup-card { margin: 25px auto 24px; padding: 25px 17px 22px; }
-  .idol-field-grid { gap: 8px; }
-  .idol-colors { gap: 6px; }
-  .idol-colors button { padding: 8px 5px; font-size: 9px; }
-  .idol-setup-topline, .idol-setup-footer { font-size: 8px; letter-spacing: .8px; }
-  .idol-keypad { gap: 9px 12px; }
-  .idol-keypad button { width: 62px; height: 62px; }
-}
-@media (max-height: 740px) {
-  .idol-setup { padding-top: 14px; padding-bottom: 12px; }
-  .idol-setup-card { margin-top: 18px; margin-bottom: 18px; padding-top: 22px; padding-bottom: 20px; }
-  .idol-passcode-card .idol-lock-emblem { margin-top: 15px; }
-  .idol-passcode-card .idol-passcode-dots { margin-top: 18px; margin-bottom: 18px; }
-  .idol-keypad { gap: 7px 12px; }
-  .idol-keypad button { width: 54px; height: 54px; }
-}
+.idol-setup{position:relative;min-height:100dvh;width:100%;overflow:auto;background:#050506;color:#f5f2ed;display:flex;flex-direction:column;align-items:center;padding:26px 22px 20px;box-sizing:border-box;font-family:"DM Sans","Noto Serif SC",serif}
+.idol-setup-glow{position:absolute;pointer-events:none;width:420px;height:420px;top:-240px;left:calc(50% - 210px);border-radius:50%;background:radial-gradient(circle,#b8a1df1b 0%,transparent 70%)}
+.idol-setup-topline,.idol-setup-footer{width:min(100%,520px);display:flex;justify-content:space-between;gap:16px;color:#77727e;font:9px/1.5 "DM Sans",sans-serif;letter-spacing:1.5px}
+.idol-setup-card{position:relative;width:min(100%,520px);box-sizing:border-box;margin:34px auto 30px;padding:34px clamp(20px,5vw,42px) 28px;border:1px solid #ffffff16;border-radius:22px;background:linear-gradient(145deg,#111113f2,#09090af5);box-shadow:0 30px 90px #0008}
+.idol-monogram{width:43px;height:43px;display:grid;place-items:center;border-radius:50%;border:1px solid #c8b9df66;color:#c8b9df;font-size:22px}
+.idol-kicker{margin:24px 0 10px;color:#b5a4d0;font:10px "DM Sans",sans-serif;letter-spacing:2.4px}
+.idol-setup h1{margin:0;font-size:clamp(30px,6vw,42px);font-weight:500;line-height:1.38;letter-spacing:1px}
+.idol-setup h1 em{font-style:normal;color:#d4c1ee}
+.idol-intro{max-width:380px;margin:15px 0 27px;color:#98939f;font-size:12px;line-height:1.9}
+.idol-setup form{display:flex;flex-direction:column;gap:17px}
+.idol-field-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.idol-setup label{display:flex;flex-direction:column;gap:8px;color:#c7c1cd;font-size:11px;letter-spacing:.3px}
+.idol-setup input,.idol-setup select{width:100%;min-width:0;box-sizing:border-box;background:#ffffff07;border:1px solid #ffffff1b;border-radius:10px;padding:12px 13px;color:#f5f2ed;font:12px "DM Sans","Noto Serif SC",serif;outline:none}
+.idol-setup input:focus,.idol-setup select:focus{border-color:#b9a1db;box-shadow:0 0 0 3px #b9a1db17}
+.idol-setup input::placeholder{color:#625e69}
+.idol-setup select option{background:#111;color:#fff}
+.idol-color-field{padding:0;border:0;margin:0;min-width:0}
+.idol-color-field legend{margin-bottom:10px;color:#c7c1cd;font-size:11px;letter-spacing:.3px}
+.idol-colors{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.idol-colors button{display:flex;align-items:center;gap:7px;justify-content:flex-start;min-width:0;padding:9px 8px;border:1px solid #ffffff16;border-radius:9px;background:#ffffff05;color:#a9a3af;font-size:10px;cursor:pointer}
+.idol-colors button.selected{border-color:#c9b5e7;background:#c9b5e711;color:#f4ecff}
+.idol-colors button span{width:12px;height:12px;flex:none;border-radius:50%;box-shadow:0 0 0 2px #ffffff12}
+.idol-passcode-heading{display:flex;flex-direction:column;gap:4px;padding-top:4px;color:#e5dfea;font-size:12px}
+.idol-passcode-heading small{color:#77717e;font-size:10px}
+.idol-start-button{display:flex;align-items:center;justify-content:space-between;margin-top:2px;padding:14px 16px;border:1px solid #d7c4f0;border-radius:10px;background:#d8c6ef;color:#17121e;font-size:13px;font-weight:600;cursor:pointer}
+.idol-start-button span{font-size:18px}
+.idol-privacy-note{margin:0;color:#6f6a76;font-size:9px;line-height:1.7}
+.idol-form-error{margin:0;color:#ff9eae;font-size:11px}
+.idol-setup-footer{margin-top:auto}
+@media(max-width:430px){.idol-setup{padding:18px 13px 15px}.idol-setup-card{margin:26px auto 24px;padding:25px 17px 22px}.idol-field-grid{gap:8px}.idol-colors{gap:6px}.idol-colors button{padding:8px 5px;font-size:9px}.idol-setup-topline,.idol-setup-footer{font-size:8px;letter-spacing:1px}}
