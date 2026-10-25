@@ -65,6 +65,9 @@ function StoryPlayer() {
                 player_stage_name: profile.stageName,
                 player_age: profile.age,
                 player_support_color: profile.supportColor,
+                player_avatar: profile.avatar || "",
+                player_signature: profile.signature || "",
+                player_device_name: profile.deviceName || "我的 iPhone",
               },
             }}
           />
