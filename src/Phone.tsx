@@ -323,7 +323,7 @@ function PhoneRuntime({
   return (
     <div
       ref={shell}
-      style={{ "--phone-scale": deviceScale } as CSSProperties}
+      style={{ "--phone-scale": deviceScale, "--support-color": String(work.variables.player_support_color ?? "#c8c9d2") } as CSSProperties}
       className={`phone-shell ios18 ${work.phone.theme === "dark" ? "dark-phone" : ""}`}
     >
       <KeyboardContext.Provider value={setKeyboard}>
@@ -488,7 +488,20 @@ function PhoneRuntime({
                           ...current,
                           ui: {
                             ...current.ui,
-                            [app]: { ...current.ui?.[app], [key]: value },
+                            ...(key === "capturedPhotos"
+                              ? {
+                                  camera: {
+                                    ...current.ui?.camera,
+                                    capturedPhotos: value,
+                                  },
+                                  photos: {
+                                    ...current.ui?.photos,
+                                    capturedPhotos: value,
+                                  },
+                                }
+                              : {
+                                  [app]: { ...current.ui?.[app], [key]: value },
+                                }),
                           },
                         },
                         "variable",
