@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机",
   "description": "仅用于界面测试，不含剧情",
-  "revision": 3,
+  "revision": 4,
   "phone": {
     "owner": "机主",
     "date": "2026-10-25",
@@ -319,7 +319,14 @@
         "owner",
         "hanbi"
       ],
-      "messages": []
+      "messages": [
+        {
+          "id": "kakao-hanbi-welcome",
+          "title": "Hanbi",
+          "body": " ",
+          "senderId": "hanbi"
+        }
+      ]
     },
     {
       "id": "kakao-songha",
@@ -329,7 +336,14 @@
         "owner",
         "songha"
       ],
-      "messages": []
+      "messages": [
+        {
+          "id": "kakao-songha-welcome",
+          "title": "Songha",
+          "body": " ",
+          "senderId": "songha"
+        }
+      ]
     },
     {
       "id": "kakao-nicholas",
@@ -339,7 +353,14 @@
         "owner",
         "nicholas"
       ],
-      "messages": []
+      "messages": [
+        {
+          "id": "kakao-nicholas-welcome",
+          "title": "Nicholas",
+          "body": " ",
+          "senderId": "nicholas"
+        }
+      ]
     },
     {
       "id": "kakao-daniel",
@@ -349,7 +370,14 @@
         "owner",
         "daniel"
       ],
-      "messages": []
+      "messages": [
+        {
+          "id": "kakao-daniel-welcome",
+          "title": "Daniel",
+          "body": " ",
+          "senderId": "daniel"
+        }
+      ]
     },
     {
       "id": "kakao-hyunjun",
@@ -359,7 +387,14 @@
         "owner",
         "hyunjun"
       ],
-      "messages": []
+      "messages": [
+        {
+          "id": "kakao-hyunjun-welcome",
+          "title": "Hyunjun",
+          "body": " ",
+          "senderId": "hyunjun"
+        }
+      ]
     },
     {
       "id": "kakao-jayjay",
@@ -369,7 +404,14 @@
         "owner",
         "jayjay"
       ],
-      "messages": []
+      "messages": [
+        {
+          "id": "kakao-jayjay-welcome",
+          "title": "Jayjay",
+          "body": " ",
+          "senderId": "jayjay"
+        }
+      ]
     },
     {
       "id": "kakao-hamin",
@@ -379,7 +421,14 @@
         "owner",
         "hamin"
       ],
-      "messages": []
+      "messages": [
+        {
+          "id": "kakao-hamin-welcome",
+          "title": "Hamin",
+          "body": " ",
+          "senderId": "hamin"
+        }
+      ]
     },
     {
       "id": "kakao-manager",
@@ -389,7 +438,14 @@
         "owner",
         "manager"
       ],
-      "messages": []
+      "messages": [
+        {
+          "id": "kakao-manager-welcome",
+          "title": "经纪人",
+          "body": " ",
+          "senderId": "manager"
+        }
+      ]
     },
     {
       "id": "kakao-mom",
@@ -399,7 +455,14 @@
         "owner",
         "mom"
       ],
-      "messages": []
+      "messages": [
+        {
+          "id": "kakao-mom-welcome",
+          "title": "妈妈",
+          "body": " ",
+          "senderId": "mom"
+        }
+      ]
     },
     {
       "id": "kakao-friend-a",
@@ -409,7 +472,14 @@
         "owner",
         "friend-a"
       ],
-      "messages": []
+      "messages": [
+        {
+          "id": "kakao-friend-a-welcome",
+          "title": "朋友A",
+          "body": " ",
+          "senderId": "friend-a"
+        }
+      ]
     },
     {
       "id": "kakao-teammate-a",
@@ -419,7 +489,14 @@
         "owner",
         "teammate-a"
       ],
-      "messages": []
+      "messages": [
+        {
+          "id": "kakao-teammate-a-welcome",
+          "title": "队友A",
+          "body": " ",
+          "senderId": "teammate-a"
+        }
+      ]
     }
   ],
   "content": {
