@@ -35,3 +35,19 @@
 .idol-avatar-actions strong small{display:block;margin-top:4px;color:#77717e;font:8px "DM Sans",sans-serif;letter-spacing:1px}
 .idol-avatar-actions button{padding:8px 10px;border:1px solid #ffffff20;border-radius:8px;background:#ffffff08;color:#e4d9f0;font-size:10px}
 .idol-hidden-file{display:none!important}
+
+.idol-avatar-buttons{display:flex;gap:7px;flex-wrap:wrap}
+.idol-avatar-buttons button{display:flex;align-items:center;gap:5px;cursor:pointer}
+.idol-camera-backdrop{position:fixed;z-index:20;inset:0;display:flex;align-items:flex-end;justify-content:center;padding:16px;background:#000b;backdrop-filter:blur(12px)}
+.idol-camera-sheet{width:min(100%,440px);padding:18px;border:1px solid #ffffff22;border-radius:22px;background:#101012;color:#f5f2ed;box-shadow:0 25px 80px #0009}
+.idol-camera-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:15px;font-size:14px}
+.idol-camera-heading small{margin-left:7px;color:#8f8997;font:9px "DM Sans",sans-serif;letter-spacing:1.5px}
+.idol-camera-heading button,.idol-camera-controls button{display:grid;place-items:center;border:0;background:transparent;color:#e8e2ed;cursor:pointer}
+.idol-camera-view{position:relative;overflow:hidden;width:100%;aspect-ratio:4/5;border-radius:15px;background:#050506}
+.idol-camera-view video{width:100%;height:100%;object-fit:cover;transform:scaleX(-1)}
+.idol-camera-guide{position:absolute;inset:13% 13%;border:1px solid #ffffff99;border-radius:48%;pointer-events:none}
+.idol-camera-controls{display:flex;align-items:center;justify-content:space-between;padding:20px 18px 12px}
+.idol-camera-controls button:not(.idol-shutter){width:38px;height:38px;border:1px solid #ffffff20;border-radius:50%;background:#ffffff0a}
+.idol-shutter{width:58px;height:58px;border:4px solid #fff;border-radius:50%;background:#f4f0f8;box-shadow:inset 0 0 0 3px #17141b;cursor:pointer}
+.idol-camera-sheet>p{margin:0;text-align:center;color:#817b88;font-size:10px}
+@media(min-width:600px){.idol-camera-backdrop{align-items:center}.idol-camera-sheet{max-height:90dvh;overflow:auto}}
