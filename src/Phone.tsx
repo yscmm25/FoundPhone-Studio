@@ -488,7 +488,20 @@ function PhoneRuntime({
                           ...current,
                           ui: {
                             ...current.ui,
-                            [app]: { ...current.ui?.[app], [key]: value },
+                            ...(key === "capturedPhotos"
+                              ? {
+                                  camera: {
+                                    ...current.ui?.camera,
+                                    capturedPhotos: value,
+                                  },
+                                  photos: {
+                                    ...current.ui?.photos,
+                                    capturedPhotos: value,
+                                  },
+                                }
+                              : {
+                                  [app]: { ...current.ui?.[app], [key]: value },
+                                }),
                           },
                         },
                         "variable",
