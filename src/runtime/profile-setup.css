@@ -1,30 +1,209 @@
-.idol-setup{position:relative;min-height:100dvh;width:100%;overflow:auto;background:#050506;color:#f5f2ed;display:flex;flex-direction:column;align-items:center;padding:26px 22px 20px;box-sizing:border-box;font-family:"DM Sans","Noto Serif SC",serif}
-.idol-setup-glow{position:absolute;pointer-events:none;width:420px;height:420px;top:-240px;left:calc(50% - 210px);border-radius:50%;background:radial-gradient(circle,#b8a1df1b 0%,transparent 70%)}
-.idol-setup-topline,.idol-setup-footer{width:min(100%,520px);display:flex;justify-content:space-between;gap:16px;color:#77727e;font:9px/1.5 "DM Sans",sans-serif;letter-spacing:1.5px}
-.idol-setup-card{position:relative;width:min(100%,520px);box-sizing:border-box;margin:34px auto 30px;padding:34px clamp(20px,5vw,42px) 28px;border:1px solid #ffffff16;border-radius:22px;background:linear-gradient(145deg,#111113f2,#09090af5);box-shadow:0 30px 90px #0008}
-.idol-monogram{width:43px;height:43px;display:grid;place-items:center;border-radius:50%;border:1px solid #c8b9df66;color:#c8b9df;font-size:22px}
-.idol-kicker{margin:24px 0 10px;color:#b5a4d0;font:10px "DM Sans",sans-serif;letter-spacing:2.4px}
-.idol-setup h1{margin:0;font-size:clamp(30px,6vw,42px);font-weight:500;line-height:1.38;letter-spacing:1px}
-.idol-setup h1 em{font-style:normal;color:#d4c1ee}
-.idol-intro{max-width:380px;margin:15px 0 27px;color:#98939f;font-size:12px;line-height:1.9}
-.idol-setup form{display:flex;flex-direction:column;gap:17px}
-.idol-field-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.idol-setup label{display:flex;flex-direction:column;gap:8px;color:#c7c1cd;font-size:11px;letter-spacing:.3px}
-.idol-setup input,.idol-setup select{width:100%;min-width:0;box-sizing:border-box;background:#ffffff07;border:1px solid #ffffff1b;border-radius:10px;padding:12px 13px;color:#f5f2ed;font:12px "DM Sans","Noto Serif SC",serif;outline:none}
-.idol-setup input:focus,.idol-setup select:focus{border-color:#b9a1db;box-shadow:0 0 0 3px #b9a1db17}
-.idol-setup input::placeholder{color:#625e69}
-.idol-setup select option{background:#111;color:#fff}
-.idol-color-field{padding:0;border:0;margin:0;min-width:0}
-.idol-color-field legend{margin-bottom:10px;color:#c7c1cd;font-size:11px;letter-spacing:.3px}
-.idol-colors{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
-.idol-colors button{display:flex;align-items:center;gap:7px;justify-content:flex-start;min-width:0;padding:9px 8px;border:1px solid #ffffff16;border-radius:9px;background:#ffffff05;color:#a9a3af;font-size:10px;cursor:pointer}
-.idol-colors button.selected{border-color:#c9b5e7;background:#c9b5e711;color:#f4ecff}
-.idol-colors button span{width:12px;height:12px;flex:none;border-radius:50%;box-shadow:0 0 0 2px #ffffff12}
-.idol-passcode-heading{display:flex;flex-direction:column;gap:4px;padding-top:4px;color:#e5dfea;font-size:12px}
-.idol-passcode-heading small{color:#77717e;font-size:10px}
-.idol-start-button{display:flex;align-items:center;justify-content:space-between;margin-top:2px;padding:14px 16px;border:1px solid #d7c4f0;border-radius:10px;background:#d8c6ef;color:#17121e;font-size:13px;font-weight:600;cursor:pointer}
-.idol-start-button span{font-size:18px}
-.idol-privacy-note{margin:0;color:#6f6a76;font-size:9px;line-height:1.7}
-.idol-form-error{margin:0;color:#ff9eae;font-size:11px}
-.idol-setup-footer{margin-top:auto}
-@media(max-width:430px){.idol-setup{padding:18px 13px 15px}.idol-setup-card{margin:26px auto 24px;padding:25px 17px 22px}.idol-field-grid{gap:8px}.idol-colors{gap:6px}.idol-colors button{padding:8px 5px;font-size:9px}.idol-setup-topline,.idol-setup-footer{font-size:8px;letter-spacing:1px}}
+.idol-setup {
+  position: relative;
+  min-height: 100dvh;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #050506;
+  color: #f5f2ed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 20px 20px;
+  box-sizing: border-box;
+  font-family: "Noto Serif SC", "Songti SC", Georgia, serif;
+}
+.idol-setup-glow {
+  position: absolute;
+  pointer-events: none;
+  width: 460px;
+  height: 460px;
+  top: -270px;
+  left: calc(50% - 230px);
+  border-radius: 50%;
+  background: radial-gradient(circle, #b8a1df16 0%, transparent 70%);
+}
+.idol-setup-topline, .idol-setup-footer {
+  position: relative;
+  width: min(100%, 470px);
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: #77727e;
+  font: 9px/1.6 Arial, sans-serif;
+  letter-spacing: 1.5px;
+}
+.idol-setup-card {
+  position: relative;
+  width: min(100%, 440px);
+  box-sizing: border-box;
+  margin: 28px auto 26px;
+  padding: 30px clamp(20px, 5vw, 34px) 25px;
+  border: 1px solid #ffffff17;
+  border-radius: 24px;
+  background: linear-gradient(150deg, #111113f5, #09090afc 78%);
+  box-shadow: 0 30px 90px #0009, inset 0 1px #ffffff08;
+}
+.idol-monogram {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid #c8b9df66;
+  color: #d4c1ee;
+}
+.idol-kicker {
+  margin: 22px 0 10px;
+  color: #b5a4d0;
+  font: 9px Arial, sans-serif;
+  letter-spacing: 2.2px;
+}
+.idol-setup h1 {
+  margin: 0;
+  font-size: clamp(27px, 5.5vw, 37px);
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: .5px;
+}
+.idol-setup h1 em { font-style: normal; color: #d4c1ee; }
+.idol-intro {
+  max-width: 350px;
+  margin: 13px 0 25px;
+  color: #98939f;
+  font-size: 12px;
+  line-height: 1.9;
+}
+.idol-profile-form { display: flex; flex-direction: column; gap: 16px; }
+.idol-setup label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #ded8e4;
+  font-size: 12px;
+}
+.idol-setup label > span, .idol-color-field legend span {
+  margin-left: 5px;
+  color: #77717e;
+  font: 8px Arial, sans-serif;
+  letter-spacing: 1px;
+}
+.idol-setup input, .idol-setup select {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  background: #ffffff07;
+  border: 1px solid #ffffff1b;
+  border-radius: 10px;
+  padding: 13px;
+  color: #f5f2ed;
+  font: 12px Arial, "Noto Serif SC", serif;
+  outline: none;
+}
+.idol-setup input:focus, .idol-setup select:focus {
+  border-color: #b9a1db;
+  box-shadow: 0 0 0 3px #b9a1db17;
+}
+.idol-setup input::placeholder { color: #625e69; }
+.idol-setup select option { background: #111; color: #fff; }
+.idol-color-field { padding: 0; border: 0; margin: 0; min-width: 0; }
+.idol-color-field legend { margin-bottom: 11px; color: #ded8e4; font-size: 12px; }
+.idol-colors { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.idol-colors button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  justify-content: flex-start;
+  min-width: 0;
+  min-height: 39px;
+  padding: 8px;
+  border: 1px solid #ffffff16;
+  border-radius: 9px;
+  background: #ffffff05;
+  color: #a9a3af;
+  font: 10px "Noto Serif SC", serif;
+  cursor: pointer;
+}
+.idol-colors button.selected { border-color: #c9b5e7; background: #c9b5e711; color: #f4ecff; }
+.idol-colors button > span { width: 11px; height: 11px; flex: none; border-radius: 50%; box-shadow: 0 0 0 2px #ffffff12; }
+.idol-start-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2px;
+  padding: 14px 16px;
+  border: 1px solid #d7c4f0;
+  border-radius: 10px;
+  background: #d8c6ef;
+  color: #17121e;
+  font: 13px "Noto Serif SC", serif;
+  cursor: pointer;
+}
+.idol-privacy-note { margin: 0; color: #6f6a76; font: 9px/1.8 Arial, "Noto Serif SC", serif; }
+.idol-passcode-card { text-align: center; }
+.idol-passcode-card .idol-monogram { margin: 0 auto; }
+.idol-back-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+  margin: 0 0 22px;
+  border: 0;
+  background: none;
+  color: #aaa1b5;
+  font-size: 11px;
+  cursor: pointer;
+}
+.idol-passcode-card .idol-kicker { margin-top: 8px; }
+.idol-passcode-card .idol-intro { margin: 12px auto 26px; }
+.idol-passcode-dots { display: flex; justify-content: center; gap: 13px; margin: 28px 0 14px; }
+.idol-passcode-dots span {
+  width: 9px;
+  height: 9px;
+  border: 1px solid #82778f;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.idol-passcode-dots span.filled { background: #e2d1f8; border-color: #e2d1f8; box-shadow: 0 0 12px #c8b9df55; }
+.idol-passcode-hint { min-height: 18px; margin: 0 0 14px; color: #aaa0b7; font-size: 11px; }
+.idol-passcode-hint:has(+ .idol-keypad) { color: #aaa0b7; }
+.idol-keypad {
+  width: min(100%, 270px);
+  margin: 0 auto 23px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px 18px;
+}
+.idol-keypad button {
+  width: 65px;
+  height: 65px;
+  justify-self: center;
+  border: 1px solid #ffffff12;
+  border-radius: 50%;
+  background: #ffffff0c;
+  color: #f7f3fa;
+  font: 25px/1 Arial, sans-serif;
+  cursor: pointer;
+  transition: background .15s, transform .15s;
+}
+.idol-keypad button:active { background: #b9a1db35; transform: scale(.96); }
+.idol-keypad .delete-key { border-color: transparent; background: transparent; color: #aaa1b5; }
+.idol-passcode-card .idol-privacy-note { max-width: 290px; margin: 0 auto; }
+.idol-form-error { margin: 0; color: #ff9eae; font-size: 11px; }
+.idol-setup-footer { margin-top: auto; }
+@media (max-width: 430px) {
+  .idol-setup { padding: 18px 13px 15px; }
+  .idol-setup-card { margin: 22px auto 22px; padding: 25px 17px 22px; }
+  .idol-setup-topline, .idol-setup-footer { font-size: 8px; letter-spacing: .8px; }
+  .idol-colors { gap: 6px; }
+  .idol-colors button { padding: 8px 5px; font-size: 9px; }
+  .idol-keypad { gap: 10px 12px; }
+  .idol-keypad button { width: 61px; height: 61px; }
+}
+@media (max-height: 760px) {
+  .idol-setup { min-height: 100%; }
+  .idol-passcode-card { margin-top: 14px; }
+  .idol-passcode-dots { margin-top: 18px; }
+  .idol-keypad { gap: 7px 12px; }
+  .idol-keypad button { width: 55px; height: 55px; }
+}
