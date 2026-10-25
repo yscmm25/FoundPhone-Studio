@@ -1,7 +1,7 @@
 name: Validate and deploy Pages
 on:
   push:
-    branches: [main]
+    branches: [main, feat/idol-simulator-profile-camera]
   workflow_dispatch:
 permissions:
   contents: read
