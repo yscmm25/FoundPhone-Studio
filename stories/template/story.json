@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "炮友模拟器",
   "description": "以 KakaoTalk 为核心的多线关系互动模拟器：同时处理暧昧、邀约、时间冲突与关系后果。",
-  "revision": 7,
+  "revision": 8,
   "phone": {
     "owner": "○○",
     "date": "2026-10-25",
@@ -285,27 +285,6 @@
       ]
     },
     {
-      "id": "test-chat-kakao",
-      "app": "kakao",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-kakao",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        },
-        {
-          "id": "test-reply-kakao",
-          "body": "这是一条测试回复。",
-          "senderId": "owner"
-        }
-      ]
-    },
-    {
       "id": "kakao-manager",
       "app": "kakao",
       "title": "经纪人",
@@ -382,38 +361,7 @@
         "hyunjun"
       ],
       "avatarSource": "tw-daniel-airport",
-      "messages": [
-        {
-          "id": "kakao-hyunjun-1",
-          "body": "昨天我是不是太过了🥺",
-          "senderId": "hyunjun",
-          "time": "23:16"
-        },
-        {
-          "id": "kakao-hyunjun-2",
-          "body": "？你现在才来问？",
-          "senderId": "owner",
-          "time": "23:18"
-        },
-        {
-          "id": "kakao-hyunjun-3",
-          "body": "我本来想当面问的……",
-          "senderId": "hyunjun",
-          "time": "23:19"
-        },
-        {
-          "id": "kakao-hyunjun-4",
-          "body": "但你今天是不是很忙啊",
-          "senderId": "hyunjun",
-          "time": "23:22"
-        },
-        {
-          "id": "kakao-hyunjun-5",
-          "body": "算了 你先忙ㅋㅋ",
-          "senderId": "hyunjun",
-          "time": "23:24"
-        }
-      ]
+      "messages": []
     },
     {
       "id": "kakao-songha",
@@ -424,32 +372,7 @@
         "songha"
       ],
       "avatarSource": "tw-songha-bubble",
-      "messages": [
-        {
-          "id": "kakao-songha-1",
-          "body": "到家了吗？",
-          "senderId": "songha",
-          "time": "23:16"
-        },
-        {
-          "id": "kakao-songha-2",
-          "body": "刚才看你脸色不太好。",
-          "senderId": "songha",
-          "time": "23:18"
-        },
-        {
-          "id": "kakao-songha-3",
-          "body": "明天训练结束我去接你，想吃什么？",
-          "senderId": "songha",
-          "time": "23:19"
-        },
-        {
-          "id": "kakao-songha-4",
-          "body": "还有件事，我想当面问你。",
-          "senderId": "songha",
-          "time": "23:22"
-        }
-      ]
+      "messages": []
     },
     {
       "id": "kakao-daniel",
@@ -460,26 +383,7 @@
         "daniel"
       ],
       "avatarSource": "tw-hanbi-art",
-      "messages": [
-        {
-          "id": "kakao-daniel-1",
-          "body": "你刚刚跟谁在一起？",
-          "senderId": "daniel",
-          "time": "23:16"
-        },
-        {
-          "id": "kakao-daniel-2",
-          "body": "算了，当我没问。",
-          "senderId": "daniel",
-          "time": "23:18"
-        },
-        {
-          "id": "kakao-daniel-3",
-          "body": "反正我们也没什么关系，对吧。",
-          "senderId": "daniel",
-          "time": "23:19"
-        }
-      ]
+      "messages": []
     },
     {
       "id": "kakao-nicholas",
@@ -490,26 +394,7 @@
         "nicholas"
       ],
       "avatarSource": "tw-nicholas-selfie",
-      "messages": [
-        {
-          "id": "kakao-nicholas-1",
-          "body": "你睡了吗？",
-          "senderId": "nicholas",
-          "time": "23:16"
-        },
-        {
-          "id": "kakao-nicholas-2",
-          "body": "没什么大事，只是想跟你说说话。",
-          "senderId": "nicholas",
-          "time": "23:18"
-        },
-        {
-          "id": "kakao-nicholas-3",
-          "body": "如果你累了就明天再回我。",
-          "senderId": "nicholas",
-          "time": "23:19"
-        }
-      ]
+      "messages": []
     },
     {
       "id": "kakao-jayjay",
@@ -520,26 +405,7 @@
         "jayjay"
       ],
       "avatarSource": "tw-hanbi-art",
-      "messages": [
-        {
-          "id": "kakao-jayjay-1",
-          "body": "我煮了点东西。",
-          "senderId": "jayjay",
-          "time": "23:16"
-        },
-        {
-          "id": "kakao-jayjay-2",
-          "body": "你要不要过来吃？不想出门的话我给你送过去。",
-          "senderId": "jayjay",
-          "time": "23:18"
-        },
-        {
-          "id": "kakao-jayjay-3",
-          "body": "不用现在答复，怕你又忙到忘记吃饭。",
-          "senderId": "jayjay",
-          "time": "23:19"
-        }
-      ]
+      "messages": []
     },
     {
       "id": "kakao-hamin",
@@ -550,26 +416,7 @@
         "hamin"
       ],
       "avatarSource": "tw-shu0-0",
-      "messages": [
-        {
-          "id": "kakao-hamin-1",
-          "body": "你上次说的事，我处理好了。",
-          "senderId": "hamin",
-          "time": "23:16"
-        },
-        {
-          "id": "kakao-hamin-2",
-          "body": "地址发我，我让司机送过去。",
-          "senderId": "hamin",
-          "time": "23:18"
-        },
-        {
-          "id": "kakao-hamin-3",
-          "body": "别误会。你不想接受也可以拒绝。",
-          "senderId": "hamin",
-          "time": "23:19"
-        }
-      ]
+      "messages": []
     }
   ],
   "content": {
