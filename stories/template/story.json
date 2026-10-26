@@ -1,9 +1,9 @@
 {
   "scriptVersion": 1,
   "id": "ui-test-phone-v2",
-  "title": "女爱豆的手机",
-  "description": "K-pop 女爱豆手机模拟器：粉圈推特、七位知名粉丝与日常互动。",
-  "revision": 6,
+  "title": "炮友模拟器",
+  "description": "以 KakaoTalk 为核心的多线关系互动模拟器：同时处理暧昧、邀约、时间冲突与关系后果。",
+  "revision": 7,
   "phone": {
     "owner": "○○",
     "date": "2026-10-25",
@@ -89,52 +89,46 @@
   ],
   "contacts": [
     {
-      "id": "test-contact",
-      "name": "测试联系人",
+      "id": "hamin",
+      "name": "Hamin",
       "phone": "",
-      "bio": "这是一条测试内容。"
-    },
-    {
-      "id": "hanbi",
-      "name": "Hanbi",
-      "phone": "",
-      "bio": ""
-    },
-    {
-      "id": "songha",
-      "name": "Songha",
-      "phone": "",
-      "bio": ""
-    },
-    {
-      "id": "nicholas",
-      "name": "Nicholas",
-      "phone": "",
-      "bio": ""
-    },
-    {
-      "id": "daniel",
-      "name": "Daniel",
-      "phone": "",
-      "bio": ""
-    },
-    {
-      "id": "hyunjun",
-      "name": "Hyunjun",
-      "phone": "",
-      "bio": ""
+      "bio": "04｜财阀哥。冷脸克制，习惯用行动和资源解决问题，但不会替你决定关系。",
+      "avatarSource": "tw-shu0-0"
     },
     {
       "id": "jayjay",
       "name": "Jayjay",
       "phone": "",
-      "bio": ""
+      "bio": "03｜原神神男。温柔、有生活感，会用很自然的方式照顾你。",
+      "avatarSource": "tw-hanbi-art"
     },
     {
-      "id": "hamin",
-      "name": "Hamin",
+      "id": "nicholas",
+      "name": "Nicholas",
       "phone": "",
-      "bio": ""
+      "bio": "06｜小洋人。温顺慢热，有点不安，正在慢慢学会表达自己的需求。",
+      "avatarSource": "tw-nicholas-selfie"
+    },
+    {
+      "id": "daniel",
+      "name": "Daniel",
+      "phone": "",
+      "bio": "06｜狐狸精。嘴硬、爱拌嘴，也会吃醋；但总觉得自己没资格问太多。",
+      "avatarSource": "tw-hanbi-art"
+    },
+    {
+      "id": "songha",
+      "name": "Songha",
+      "phone": "",
+      "bio": "04｜公州体制男／体育生。行动派，照顾人很自然，直球但会追问关系。",
+      "avatarSource": "tw-songha-bubble"
+    },
+    {
+      "id": "hyunjun",
+      "name": "Hyunjun",
+      "phone": "",
+      "bio": "05｜金毛幼犬。黏人、爱撒娇，偶尔嘴硬；越在意越容易不安。",
+      "avatarSource": "tw-daniel-airport"
     },
     {
       "id": "manager",
@@ -312,125 +306,6 @@
       ]
     },
     {
-      "id": "kakao-hanbi",
-      "app": "kakao",
-      "title": "Hanbi",
-      "participants": [
-        "owner",
-        "hanbi"
-      ],
-      "messages": [
-        {
-          "id": "kakao-hanbi-welcome",
-          "title": "Hanbi",
-          "body": " ",
-          "senderId": "hanbi"
-        }
-      ]
-    },
-    {
-      "id": "kakao-songha",
-      "app": "kakao",
-      "title": "Songha",
-      "participants": [
-        "owner",
-        "songha"
-      ],
-      "messages": [
-        {
-          "id": "kakao-songha-welcome",
-          "title": "Songha",
-          "body": " ",
-          "senderId": "songha"
-        }
-      ]
-    },
-    {
-      "id": "kakao-nicholas",
-      "app": "kakao",
-      "title": "Nicholas",
-      "participants": [
-        "owner",
-        "nicholas"
-      ],
-      "messages": [
-        {
-          "id": "kakao-nicholas-welcome",
-          "title": "Nicholas",
-          "body": " ",
-          "senderId": "nicholas"
-        }
-      ]
-    },
-    {
-      "id": "kakao-daniel",
-      "app": "kakao",
-      "title": "Daniel",
-      "participants": [
-        "owner",
-        "daniel"
-      ],
-      "messages": [
-        {
-          "id": "kakao-daniel-welcome",
-          "title": "Daniel",
-          "body": " ",
-          "senderId": "daniel"
-        }
-      ]
-    },
-    {
-      "id": "kakao-hyunjun",
-      "app": "kakao",
-      "title": "Hyunjun",
-      "participants": [
-        "owner",
-        "hyunjun"
-      ],
-      "messages": [
-        {
-          "id": "kakao-hyunjun-welcome",
-          "title": "Hyunjun",
-          "body": " ",
-          "senderId": "hyunjun"
-        }
-      ]
-    },
-    {
-      "id": "kakao-jayjay",
-      "app": "kakao",
-      "title": "Jayjay",
-      "participants": [
-        "owner",
-        "jayjay"
-      ],
-      "messages": [
-        {
-          "id": "kakao-jayjay-welcome",
-          "title": "Jayjay",
-          "body": " ",
-          "senderId": "jayjay"
-        }
-      ]
-    },
-    {
-      "id": "kakao-hamin",
-      "app": "kakao",
-      "title": "Hamin",
-      "participants": [
-        "owner",
-        "hamin"
-      ],
-      "messages": [
-        {
-          "id": "kakao-hamin-welcome",
-          "title": "Hamin",
-          "body": " ",
-          "senderId": "hamin"
-        }
-      ]
-    },
-    {
       "id": "kakao-manager",
       "app": "kakao",
       "title": "经纪人",
@@ -495,6 +370,204 @@
           "title": "队友A",
           "body": " ",
           "senderId": "teammate-a"
+        }
+      ]
+    },
+    {
+      "id": "kakao-hyunjun",
+      "app": "kakao",
+      "title": "Hyunjun",
+      "participants": [
+        "owner",
+        "hyunjun"
+      ],
+      "avatarSource": "tw-daniel-airport",
+      "messages": [
+        {
+          "id": "kakao-hyunjun-1",
+          "body": "昨天我是不是太过了🥺",
+          "senderId": "hyunjun",
+          "time": "23:16"
+        },
+        {
+          "id": "kakao-hyunjun-2",
+          "body": "？你现在才来问？",
+          "senderId": "owner",
+          "time": "23:18"
+        },
+        {
+          "id": "kakao-hyunjun-3",
+          "body": "我本来想当面问的……",
+          "senderId": "hyunjun",
+          "time": "23:19"
+        },
+        {
+          "id": "kakao-hyunjun-4",
+          "body": "但你今天是不是很忙啊",
+          "senderId": "hyunjun",
+          "time": "23:22"
+        },
+        {
+          "id": "kakao-hyunjun-5",
+          "body": "算了 你先忙ㅋㅋ",
+          "senderId": "hyunjun",
+          "time": "23:24"
+        }
+      ]
+    },
+    {
+      "id": "kakao-songha",
+      "app": "kakao",
+      "title": "Songha",
+      "participants": [
+        "owner",
+        "songha"
+      ],
+      "avatarSource": "tw-songha-bubble",
+      "messages": [
+        {
+          "id": "kakao-songha-1",
+          "body": "到家了吗？",
+          "senderId": "songha",
+          "time": "23:16"
+        },
+        {
+          "id": "kakao-songha-2",
+          "body": "刚才看你脸色不太好。",
+          "senderId": "songha",
+          "time": "23:18"
+        },
+        {
+          "id": "kakao-songha-3",
+          "body": "明天训练结束我去接你，想吃什么？",
+          "senderId": "songha",
+          "time": "23:19"
+        },
+        {
+          "id": "kakao-songha-4",
+          "body": "还有件事，我想当面问你。",
+          "senderId": "songha",
+          "time": "23:22"
+        }
+      ]
+    },
+    {
+      "id": "kakao-daniel",
+      "app": "kakao",
+      "title": "Daniel",
+      "participants": [
+        "owner",
+        "daniel"
+      ],
+      "avatarSource": "tw-hanbi-art",
+      "messages": [
+        {
+          "id": "kakao-daniel-1",
+          "body": "你刚刚跟谁在一起？",
+          "senderId": "daniel",
+          "time": "23:16"
+        },
+        {
+          "id": "kakao-daniel-2",
+          "body": "算了，当我没问。",
+          "senderId": "daniel",
+          "time": "23:18"
+        },
+        {
+          "id": "kakao-daniel-3",
+          "body": "反正我们也没什么关系，对吧。",
+          "senderId": "daniel",
+          "time": "23:19"
+        }
+      ]
+    },
+    {
+      "id": "kakao-nicholas",
+      "app": "kakao",
+      "title": "Nicholas",
+      "participants": [
+        "owner",
+        "nicholas"
+      ],
+      "avatarSource": "tw-nicholas-selfie",
+      "messages": [
+        {
+          "id": "kakao-nicholas-1",
+          "body": "你睡了吗？",
+          "senderId": "nicholas",
+          "time": "23:16"
+        },
+        {
+          "id": "kakao-nicholas-2",
+          "body": "没什么大事，只是想跟你说说话。",
+          "senderId": "nicholas",
+          "time": "23:18"
+        },
+        {
+          "id": "kakao-nicholas-3",
+          "body": "如果你累了就明天再回我。",
+          "senderId": "nicholas",
+          "time": "23:19"
+        }
+      ]
+    },
+    {
+      "id": "kakao-jayjay",
+      "app": "kakao",
+      "title": "Jayjay",
+      "participants": [
+        "owner",
+        "jayjay"
+      ],
+      "avatarSource": "tw-hanbi-art",
+      "messages": [
+        {
+          "id": "kakao-jayjay-1",
+          "body": "我煮了点东西。",
+          "senderId": "jayjay",
+          "time": "23:16"
+        },
+        {
+          "id": "kakao-jayjay-2",
+          "body": "你要不要过来吃？不想出门的话我给你送过去。",
+          "senderId": "jayjay",
+          "time": "23:18"
+        },
+        {
+          "id": "kakao-jayjay-3",
+          "body": "不用现在答复，怕你又忙到忘记吃饭。",
+          "senderId": "jayjay",
+          "time": "23:19"
+        }
+      ]
+    },
+    {
+      "id": "kakao-hamin",
+      "app": "kakao",
+      "title": "Hamin",
+      "participants": [
+        "owner",
+        "hamin"
+      ],
+      "avatarSource": "tw-shu0-0",
+      "messages": [
+        {
+          "id": "kakao-hamin-1",
+          "body": "你上次说的事，我处理好了。",
+          "senderId": "hamin",
+          "time": "23:16"
+        },
+        {
+          "id": "kakao-hamin-2",
+          "body": "地址发我，我让司机送过去。",
+          "senderId": "hamin",
+          "time": "23:18"
+        },
+        {
+          "id": "kakao-hamin-3",
+          "body": "别误会。你不想接受也可以拒绝。",
+          "senderId": "hamin",
+          "time": "23:19"
         }
       ]
     }
@@ -800,170 +873,7 @@
         "meta": {}
       }
     ],
-    "twitter": [
-      {
-        "id": "tw-shu0-0",
-        "title": "shu0-0",
-        "sender": "shu0-0",
-        "body": "最近好寡…○粉咋熬的",
-        "time": "2026-06-26 12:56",
-        "kind": "post",
-        "likes": 60,
-        "comments": [
-          "随机用户 @onlyu ·1h：回复 @shu0-0\n看之前的物料，求一键快进到下周回归教程。",
-          "随机用户 @nameunknown ·1h：回复 @onlyu\n我也。",
-          "唯○主义 @allforher ·1h：回复 @shu0-0\n在看○○的七大梦男，比○○她们团好看，打过来我先跪了",
-          "随机用户 @lifeofdog ·1h：回复 @allforher\n点了。",
-          "随机用户 @0518 ·1h：回复 @shu0-0\nplq说的七大梦男是什么啊 刚入坑没多久求指路🥺",
-          "唯○主义 @allforher ·1h：回复 @0518\n女孩我来了，帐号po在下面了，从上到下依次是：\n\n颂哥（拌匀大粉，从练习生就开始追了，是粉圈最宽容的父亲…据说同款照头像是本人？）\n\n蓝鲨（同人产出，有时候会发点二次元，圈内梵高，仅有的几张照片都带着口罩 脸至今不详）\n\n蛋师（站哥，也是很早开始追○○的，○粉一定存过蛋师出的图的程度，有人去线下碰到过本人，说蛋师不说话的时候完全高冷混血男 但是看到○○粉籍后热情得像天使）\n\n蔚山网红hyunjun（ins网红，激梦男，才入坑还是mmr和zgk的话慎关！腿毛也挺多的，总之是不适合mmr体质的潮男）\n\n美国哥（全勤签售哥，经济实力不详…好像是美国巡演时期入坑的，虽然高富帅但是每次签售都特别老实人，因为经常被○○媚呆也有人叫呆哥）\n\n85哥（油管吃播博主，有着爱豆的脸和相扑选手的胃…平时吃饭的时候很善良，小号不怎么发帖，但是一说话感觉吃的全是毒药，喜欢当乐子人的话可以关注）\n\njay桑（日本超有名的混血编舞师，上次回归的舞蹈就是他编的，他好像入坑的比较晚，小号经常发翻跳视频，想扒舞必冲）",
-          "随机用户 @0518 ·2m：回复 @allforher\n谢谢宝宝！",
-          "随机用户 @user009 ·3m：回复 @shu0-0\n蹲。",
-          "随机用户 @user345 ·2m：回复 @shu0-0\n入住。",
-          "随机用户 @user634 ·2m：回复 @shu0-0\n入住。"
-        ],
-        "meta": {
-          "handle": "@shu0-0",
-          "bio": "",
-          "following": "20",
-          "followers": "",
-          "views": "",
-          "reposts": "20",
-          "quotes": "90",
-          "likes": "60"
-        }
-      },
-      {
-        "id": "tw-daniel-airport",
-        "title": "danielll",
-        "sender": "danielll",
-        "body": "261026 ICN\n困困的○○🥺",
-        "time": "2026-10-26 02:18",
-        "kind": "post",
-        "likes": 1000,
-        "comments": [
-          "urAngel：我女好萌吧啊啊啊啊",
-          "hyunjun_nujnuyh：怎么刚睡醒的样子也这么美",
-          "MgCl₂_85：宝宝这么早出发肯定还没吃饭ㅠㅠ老师能把我家孩子吃饭的视频拍来看看吗，没什么就是担心她吃的不好",
-          "jae_won：回复 @hahahamin85\n谁凌晨两三点有胃口啊大哥…",
-          "MgCl₂_85：回复 @milk0216\n我。",
-          "随机用户 @user234：啊啊啊又出神图了 谁懂",
-          "ジェイ @Justinjay2：kawaii🥺",
-          "随机用户：回复 @Justinjay2\njay桑也来了吗…梦男奖池还在叠加。",
-          "随机用户 @user452：好辛苦啊宝宝"
-        ],
-        "meta": {
-          "handle": "@danielll",
-          "bio": "○○’s photo archive🦋",
-          "following": "0",
-          "followers": "6,500",
-          "views": "2,000",
-          "reposts": "150",
-          "quotes": "100",
-          "likes": "1,000",
-          "media": "black"
-        }
-      },
-      {
-        "id": "tw-nicholas-selfie",
-        "title": "Nicholas",
-        "sender": "Nicholas",
-        "body": "○○明天见 Have a good night🌙",
-        "time": "2026-10-26 00:55",
-        "kind": "post",
-        "likes": 0,
-        "comments": [
-          "唯○主义 @allforher：美国哥又要幸福了…世界多我一个有钱人会怎样！",
-          "查理大王：见鬼了。这些同担到底哪来这么多钱",
-          "hyunjunnujnuyh：早点睡吧大哥 明天别顶着黑眼圈吓到我们○○了",
-          "woo_lin：我弦哥战斗力依旧不减。",
-          "Nicholas：上次○○说无论我什么样都喜欢😊",
-          "MgCl₂_○8○5 回复 @Lee1227：○○媚个粉还真把自己当盘菜了",
-          "随机账户：你又中了？！求推签售名额",
-          "Nicholas 回复 随机账户：能接受补的多的话 dm我吧",
-          "Kachin-Lamkham：拜托多一点这种又洗澡又有素质的签售哥吧🙏",
-          "Nicholas 回复 @Kachin-Lamkham：谢谢你！可免费带话 私信我",
-          "Ta-Ta：哥 记得发repo🥺",
-          "随机用户 @user007：蹲 每次视频都太搞笑了",
-          "Nicholas 回复 @用户007：我这次学了很多新梗。"
-        ],
-        "meta": {
-          "handle": "@Lee1227",
-          "bio": "just普通追星男 搬视频请找我授权",
-          "following": "5",
-          "followers": "4,000",
-          "views": "",
-          "reposts": "",
-          "quotes": "",
-          "likes": ""
-        }
-      },
-      {
-        "id": "tw-hanbi-art",
-        "title": "Blueshark",
-        "sender": "Blueshark",
-        "body": "摸张没睡醒的○○\n参考的机场图\n🔗",
-        "time": "2026-06-23 03:29",
-        "kind": "post",
-        "likes": 500,
-        "comments": [
-          "Sada🌸haru：老师你照镜子是不是什么都看不见",
-          "因为神本无像。",
-          "随机用户 @user1020：蓝鲨老师你是神吧…这是我女儿老婆主人…",
-          "随机用户 @user123：我去 哥你也太快了",
-          "hyunjun_nujnuyh：我保证这个女孩是天使",
-          "随机用户 @user1030 回复 @0212_6002：我的发啊 弦哥善良人格顶号了。",
-          "milking 回复 @用户1030：你弦哥也是吃饭不打厨子。",
-          "ジェイ：すごい！\n好厉害！",
-          "Blueshark 回复 @Justinjay2：ありがとうございます🙏\n谢谢🙏",
-          "woo_lin @1119 ·12m 回复 @hanbi1024：舞艺大会两座大山会晤了。"
-        ],
-        "meta": {
-          "handle": "@hanbi1024",
-          "bio": "随便画点谢谢喜欢^_^ 禁商用二改ai 约稿请私信",
-          "following": "20",
-          "followers": "5,000",
-          "views": "",
-          "reposts": "50",
-          "quotes": "",
-          "likes": "500"
-        }
-      },
-      {
-        "id": "tw-songha-bubble",
-        "title": "song for her",
-        "sender": "song for her",
-        "body": "【🔔叮咚！你的泡泡好友来信啦❤️】\n刚到宿舍就和粉丝报信的好宝👉\n睡个好觉🥺",
-        "time": "2026-06-23 04:10",
-        "kind": "post",
-        "likes": 2000,
-        "comments": [
-          "nameunknown：满分女不解释",
-          "hyunjun_nujnuyh：有没有比宇宙更大的东西我要送给○○",
-          "woo_lin：回复 @0212_6002\n有没有比宇宙更大的东西我要送给○○",
-          "hyunjun_nujnuyh 回复 @1119：排队。",
-          "Cakett_：好萌啊我宝，颂哥一天24小时有23小时都在看手机吧！",
-          "allforher 回复 @0706：没那么少！",
-          "song for her @_0419 ·11m 回复 @allforher：ㅋㅋㅋ其实猜到落地就会发🫧",
-          "ハルタharutaaa 回复 @_0419：如果我是○○ 谁又是我的song for her",
-          "MgCl₂_○8○5 回复 @harutaaa：给你at了 @hyunjun_nujnuyh",
-          "jae_won 回复 @hahahamin85：我不行了。",
-          "loveis○○：○○宝宝是天使来的",
-          "Nicholas：明天就能见到宝宝了ㅠㅠ",
-          "我只是个路人 回复 @Lee1227：谁问了。",
-          "随机用户 @user1111：宝宝晚安🥰"
-        ],
-        "meta": {
-          "handle": "@_0419",
-          "bio": "仅拌匀",
-          "following": "3",
-          "followers": "9,000",
-          "views": "",
-          "reposts": "600",
-          "quotes": "",
-          "likes": "2,000"
-        }
-      }
-    ],
+    "twitter": [],
     "youtube": [
       {
         "id": "test-item-youtube",
@@ -1100,7 +1010,12 @@
       }
     ]
   },
-  "variables": {},
+  "variables": {
+    "simulatorMode": "friends-with-benefits",
+    "coreLoop": "白天自由探索手机，晚上处理邀约，有限行动点造成时间冲突，第二天面对关系后果。",
+    "dailyActionPoints": 3,
+    "avatarMapping": "KKT联系人头像沿用原推特账号对应头像"
+  },
   "events": [],
   "tests": []
 }
