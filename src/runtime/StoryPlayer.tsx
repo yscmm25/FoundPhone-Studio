@@ -99,6 +99,27 @@ function StoryPlayer() {
           <p style={{ color: "#a1a1a6", fontSize: "14px", lineHeight: 1.7, margin: "0 0 34px" }}>
             请输入机主名称，开始探索手机里的内容。
           </p>
+          <a
+            href="http://t.cn/AXMIjCR6"
+            target="_blank"
+            rel="noreferrer noopener"
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "8px",
+              marginBottom: "26px",
+              padding: "10px 15px",
+              border: "1px solid #39393d",
+              borderRadius: "999px",
+              color: "#e5e5ea",
+              textDecoration: "none",
+              fontSize: "12px",
+              letterSpacing: "0.04em",
+            }}
+          >
+            <span aria-hidden="true">♫</span> WE GO · 官方音源
+            <span aria-hidden="true" style={{ color: "#8e8e93" }}>↗</span>
+          </a>
           <label htmlFor="owner-name" style={{ display: "block", textAlign: "left", fontSize: "12px", color: "#a1a1a6", marginBottom: "10px" }}>
             机主名称
           </label>
