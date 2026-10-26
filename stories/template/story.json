@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "炮友模拟器",
   "description": "以 KakaoTalk 为核心的多线关系互动模拟器：同时处理暧昧、邀约、时间冲突与关系后果。",
-  "revision": 8,
+  "revision": 9,
   "phone": {
     "owner": "○○",
     "date": "2026-10-25",
@@ -89,46 +89,46 @@
   ],
   "contacts": [
     {
-      "id": "hamin",
-      "name": "Hamin",
+      "id": "songha",
+      "name": "Songha",
       "phone": "",
-      "bio": "04｜财阀哥。冷脸克制，习惯用行动和资源解决问题，但不会替你决定关系。",
-      "avatarSource": "tw-shu0-0"
-    },
-    {
-      "id": "jayjay",
-      "name": "Jayjay",
-      "phone": "",
-      "bio": "03｜原神神男。温柔、有生活感，会用很自然的方式照顾你。",
-      "avatarSource": "tw-hanbi-art"
-    },
-    {
-      "id": "nicholas",
-      "name": "Nicholas",
-      "phone": "",
-      "bio": "06｜小洋人。温顺慢热，有点不安，正在慢慢学会表达自己的需求。",
-      "avatarSource": "tw-nicholas-selfie"
+      "bio": "04公州体制男"
     },
     {
       "id": "daniel",
       "name": "Daniel",
       "phone": "",
-      "bio": "06｜狐狸精。嘴硬、爱拌嘴，也会吃醋；但总觉得自己没资格问太多。",
-      "avatarSource": "tw-hanbi-art"
-    },
-    {
-      "id": "songha",
-      "name": "Songha",
-      "phone": "",
-      "bio": "04｜公州体制男／体育生。行动派，照顾人很自然，直球但会追问关系。",
-      "avatarSource": "tw-songha-bubble"
+      "bio": "05金毛幼犬"
     },
     {
       "id": "hyunjun",
       "name": "Hyunjun",
       "phone": "",
-      "bio": "05｜金毛幼犬。黏人、爱撒娇，偶尔嘴硬；越在意越容易不安。",
-      "avatarSource": "tw-daniel-airport"
+      "bio": "06狐狸精"
+    },
+    {
+      "id": "hanbi",
+      "name": "Hanbi",
+      "phone": "",
+      "bio": "03原神男"
+    },
+    {
+      "id": "nicholas",
+      "name": "Nicholas",
+      "phone": "",
+      "bio": "04财阀哥"
+    },
+    {
+      "id": "jayjay",
+      "name": "Jayjay",
+      "phone": "",
+      "bio": "06小洋人"
+    },
+    {
+      "id": "hamin",
+      "name": "Hamin",
+      "phone": "",
+      "bio": "06绿茶男"
     },
     {
       "id": "manager",
@@ -156,134 +156,6 @@
     }
   ],
   "chats": [
-    {
-      "id": "test-chat-messages",
-      "app": "messages",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-messages",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-wechat",
-      "app": "wechat",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-wechat",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-qq",
-      "app": "qq",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-qq",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-whatsapp",
-      "app": "whatsapp",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-whatsapp",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-telegram",
-      "app": "telegram",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-telegram",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-discord",
-      "app": "discord",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-discord",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-line",
-      "app": "line",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-line",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-messenger",
-      "app": "messenger",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-messenger",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
     {
       "id": "kakao-manager",
       "app": "kakao",
@@ -355,68 +227,72 @@
     {
       "id": "kakao-hyunjun",
       "app": "kakao",
-      "title": "Hyunjun",
+      "title": "Hyunjun（06狐狸精）",
       "participants": [
         "owner",
         "hyunjun"
       ],
-      "avatarSource": "tw-daniel-airport",
       "messages": []
     },
     {
       "id": "kakao-songha",
       "app": "kakao",
-      "title": "Songha",
+      "title": "Songha（04公州体制男）",
       "participants": [
         "owner",
         "songha"
       ],
-      "avatarSource": "tw-songha-bubble",
       "messages": []
     },
     {
       "id": "kakao-daniel",
       "app": "kakao",
-      "title": "Daniel",
+      "title": "Daniel（05金毛幼犬）",
       "participants": [
         "owner",
         "daniel"
       ],
-      "avatarSource": "tw-hanbi-art",
       "messages": []
     },
     {
       "id": "kakao-nicholas",
       "app": "kakao",
-      "title": "Nicholas",
+      "title": "Nicholas（04财阀哥）",
       "participants": [
         "owner",
         "nicholas"
       ],
-      "avatarSource": "tw-nicholas-selfie",
       "messages": []
     },
     {
       "id": "kakao-jayjay",
       "app": "kakao",
-      "title": "Jayjay",
+      "title": "Jayjay（06小洋人）",
       "participants": [
         "owner",
         "jayjay"
       ],
-      "avatarSource": "tw-hanbi-art",
       "messages": []
     },
     {
       "id": "kakao-hamin",
       "app": "kakao",
-      "title": "Hamin",
+      "title": "Hamin（06绿茶男）",
       "participants": [
         "owner",
         "hamin"
       ],
-      "avatarSource": "tw-shu0-0",
       "messages": []
+    },
+    {
+      "id": "kakao-hanbi",
+      "app": "kakao",
+      "participants": [
+        "owner",
+        "hanbi"
+      ],
+      "messages": [],
+      "title": "Hanbi（03原神男）"
     }
   ],
   "content": {
@@ -702,12 +578,95 @@
     ],
     "instagram": [
       {
-        "id": "test-item-instagram",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
+        "id": "ig-account-songha",
+        "title": "SH_419",
+        "body": "Songha",
+        "sender": "Songha",
+        "kind": "profile",
+        "meta": {
+          "platform": "instagram",
+          "username": "SH_419",
+          "contactId": "songha",
+          "displayName": "Songha"
+        }
+      },
+      {
+        "id": "ig-account-daniel",
+        "title": "D_ielllll",
+        "body": "Daniel",
+        "sender": "Daniel",
+        "kind": "profile",
+        "meta": {
+          "platform": "instagram",
+          "username": "D_ielllll",
+          "contactId": "daniel",
+          "displayName": "Daniel"
+        }
+      },
+      {
+        "id": "ig-account-hyunjun",
+        "title": "hyunjun212nujnuyh",
+        "body": "Hyunjun",
+        "sender": "Hyunjun",
+        "kind": "profile",
+        "meta": {
+          "platform": "instagram",
+          "username": "hyunjun212nujnuyh",
+          "contactId": "hyunjun",
+          "displayName": "Hyunjun"
+        }
+      },
+      {
+        "id": "ig-account-hanbi",
+        "title": "Blueshark1024",
+        "body": "Hanbi",
+        "sender": "Hanbi",
+        "kind": "profile",
+        "meta": {
+          "platform": "instagram",
+          "username": "Blueshark1024",
+          "contactId": "hanbi",
+          "displayName": "Hanbi"
+        }
+      },
+      {
+        "id": "ig-account-nicholas",
+        "title": "1227_Lee",
+        "body": "Nicholas",
+        "sender": "Nicholas",
+        "kind": "profile",
+        "meta": {
+          "platform": "instagram",
+          "username": "1227_Lee",
+          "contactId": "nicholas",
+          "displayName": "Nicholas"
+        }
+      },
+      {
+        "id": "ig-account-jayjay",
+        "title": "Justinjay2^",
+        "body": "Jayjay",
+        "sender": "Jayjay",
+        "kind": "profile",
+        "meta": {
+          "platform": "instagram",
+          "username": "Justinjay2^",
+          "contactId": "jayjay",
+          "displayName": "Jayjay"
+        }
+      },
+      {
+        "id": "ig-account-hamin",
+        "title": "MgCl₂_85",
+        "body": "Hamin",
+        "sender": "Hamin",
+        "kind": "profile",
+        "meta": {
+          "platform": "instagram",
+          "username": "MgCl₂_85",
+          "contactId": "hamin",
+          "displayName": "Hamin"
+        }
       }
     ],
     "tiktok": [
