@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "炮友模拟器",
   "description": "以 KakaoTalk 为核心的多线关系互动模拟器：同时处理暧昧、邀约、时间冲突与关系后果。",
-  "revision": 11,
+  "revision": 12,
   "phone": {
     "owner": "○○",
     "date": "2026-10-25",
@@ -92,7 +92,7 @@
       "id": "songha",
       "name": "Songha",
       "phone": "",
-      "bio": "04公州体制男"
+      "bio": "04公州欧巴"
     },
     {
       "id": "daniel",
@@ -110,7 +110,7 @@
       "id": "hanbi",
       "name": "Hanbi",
       "phone": "",
-      "bio": "03原神男"
+      "bio": "03原神梵高"
     },
     {
       "id": "nicholas",
@@ -157,50 +157,6 @@
   ],
   "chats": [
     {
-      "id": "kakao-manager",
-      "app": "kakao",
-      "title": "经纪人",
-      "participants": [
-        "owner",
-        "manager"
-      ],
-      "messages": [
-        {
-          "id": "kakao-manager-welcome",
-          "title": "经纪人",
-          "body": " ",
-          "senderId": "manager"
-        }
-      ]
-    },
-    {
-      "id": "kakao-mom",
-      "app": "kakao",
-      "title": "妈妈",
-      "participants": [
-        "owner",
-        "mom"
-      ],
-      "messages": [
-        {
-          "id": "kakao-mom-welcome",
-          "title": "妈妈",
-          "body": " ",
-          "senderId": "mom"
-        }
-      ]
-    },
-    {
-      "id": "kakao-hyunjun",
-      "app": "kakao",
-      "title": "Hyunjun（06狐狸精）",
-      "participants": [
-        "owner",
-        "hyunjun"
-      ],
-      "messages": []
-    },
-    {
       "id": "kakao-songha",
       "app": "kakao",
       "title": "Songha（04公州欧巴）",
@@ -219,6 +175,26 @@
         "daniel"
       ],
       "messages": []
+    },
+    {
+      "id": "kakao-hyunjun",
+      "app": "kakao",
+      "title": "Hyunjun（06狐狸精）",
+      "participants": [
+        "owner",
+        "hyunjun"
+      ],
+      "messages": []
+    },
+    {
+      "id": "kakao-hanbi",
+      "app": "kakao",
+      "participants": [
+        "owner",
+        "hanbi"
+      ],
+      "messages": [],
+      "title": "Hanbi（03原神梵高）"
     },
     {
       "id": "kakao-nicholas",
@@ -251,16 +227,6 @@
       "messages": []
     },
     {
-      "id": "kakao-hanbi",
-      "app": "kakao",
-      "participants": [
-        "owner",
-        "hanbi"
-      ],
-      "messages": [],
-      "title": "Hanbi（03原神梵高）"
-    },
-    {
       "id": "kakao-yuneun",
       "app": "kakao",
       "title": "允恩",
@@ -277,6 +243,26 @@
       "participants": [
         "owner",
         "kim-taebin"
+      ],
+      "messages": []
+    },
+    {
+      "id": "kakao-manager",
+      "app": "kakao",
+      "title": "经纪人",
+      "participants": [
+        "owner",
+        "manager"
+      ],
+      "messages": []
+    },
+    {
+      "id": "kakao-mom",
+      "app": "kakao",
+      "title": "妈妈",
+      "participants": [
+        "owner",
+        "mom"
       ],
       "messages": []
     }
