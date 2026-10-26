@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "炮友模拟器",
   "description": "以 KakaoTalk 为核心的多线关系互动模拟器：同时处理暧昧、邀约、时间冲突与关系后果。",
-  "revision": 9,
+  "revision": 10,
   "phone": {
     "owner": "○○",
     "date": "2026-10-25",
@@ -143,14 +143,14 @@
       "bio": ""
     },
     {
-      "id": "friend-a",
-      "name": "朋友A",
+      "id": "yuneun",
+      "name": "允恩",
       "phone": "",
       "bio": ""
     },
     {
-      "id": "teammate-a",
-      "name": "队友A",
+      "id": "kim-taebin",
+      "name": "金泰彬",
       "phone": "",
       "bio": ""
     }
@@ -191,40 +191,6 @@
       ]
     },
     {
-      "id": "kakao-friend-a",
-      "app": "kakao",
-      "title": "朋友A",
-      "participants": [
-        "owner",
-        "friend-a"
-      ],
-      "messages": [
-        {
-          "id": "kakao-friend-a-welcome",
-          "title": "朋友A",
-          "body": " ",
-          "senderId": "friend-a"
-        }
-      ]
-    },
-    {
-      "id": "kakao-teammate-a",
-      "app": "kakao",
-      "title": "队友A",
-      "participants": [
-        "owner",
-        "teammate-a"
-      ],
-      "messages": [
-        {
-          "id": "kakao-teammate-a-welcome",
-          "title": "队友A",
-          "body": " ",
-          "senderId": "teammate-a"
-        }
-      ]
-    },
-    {
       "id": "kakao-hyunjun",
       "app": "kakao",
       "title": "Hyunjun（06狐狸精）",
@@ -237,7 +203,7 @@
     {
       "id": "kakao-songha",
       "app": "kakao",
-      "title": "Songha（04公州体制男）",
+      "title": "Songha（04公州欧巴）",
       "participants": [
         "owner",
         "songha"
@@ -292,7 +258,27 @@
         "hanbi"
       ],
       "messages": [],
-      "title": "Hanbi（03原神男）"
+      "title": "Hanbi（03原神梵高）"
+    },
+    {
+      "id": "kakao-yuneun",
+      "app": "kakao",
+      "title": "允恩",
+      "participants": [
+        "owner",
+        "yuneun"
+      ],
+      "messages": []
+    },
+    {
+      "id": "kakao-kim-taebin",
+      "app": "kakao",
+      "title": "金泰彬",
+      "participants": [
+        "owner",
+        "kim-taebin"
+      ],
+      "messages": []
     }
   ],
   "content": {
