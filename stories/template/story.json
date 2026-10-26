@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "炮友模拟器",
   "description": "以 KakaoTalk 为核心的多线关系互动模拟器：同时处理暧昧、邀约、时间冲突与关系后果。",
-  "revision": 12,
+  "revision": 13,
   "phone": {
     "owner": "○○",
     "date": "2026-10-25",
@@ -563,32 +563,6 @@
         }
       },
       {
-        "id": "ig-account-daniel",
-        "title": "D_ielllll",
-        "body": "Daniel",
-        "sender": "Daniel",
-        "kind": "text",
-        "meta": {
-          "platform": "instagram",
-          "username": "D_ielllll",
-          "contactId": "daniel",
-          "displayName": "Daniel"
-        }
-      },
-      {
-        "id": "ig-account-hyunjun",
-        "title": "hyunjun212nujnuyh",
-        "body": "Hyunjun",
-        "sender": "Hyunjun",
-        "kind": "text",
-        "meta": {
-          "platform": "instagram",
-          "username": "hyunjun212nujnuyh",
-          "contactId": "hyunjun",
-          "displayName": "Hyunjun"
-        }
-      },
-      {
         "id": "ig-account-hanbi",
         "title": "Blueshark1024",
         "body": "Hanbi",
@@ -615,16 +589,16 @@
         }
       },
       {
-        "id": "ig-account-jayjay",
-        "title": "Justinjay2^",
-        "body": "Jayjay",
-        "sender": "Jayjay",
+        "id": "ig-account-hyunjun",
+        "title": "hyunjun212nujnuyh",
+        "body": "Hyunjun",
+        "sender": "Hyunjun",
         "kind": "text",
         "meta": {
           "platform": "instagram",
-          "username": "Justinjay2^",
-          "contactId": "jayjay",
-          "displayName": "Jayjay"
+          "username": "hyunjun212nujnuyh",
+          "contactId": "hyunjun",
+          "displayName": "Hyunjun"
         }
       },
       {
@@ -638,6 +612,32 @@
           "username": "MgCl₂_85",
           "contactId": "hamin",
           "displayName": "Hamin"
+        }
+      },
+      {
+        "id": "ig-account-jayjay",
+        "title": "Justinjay2^",
+        "body": "Jayjay",
+        "sender": "Jayjay",
+        "kind": "text",
+        "meta": {
+          "platform": "instagram",
+          "username": "Justinjay2^",
+          "contactId": "jayjay",
+          "displayName": "Jayjay"
+        }
+      },
+      {
+        "id": "ig-account-daniel",
+        "title": "D_ielllll",
+        "body": "Daniel",
+        "sender": "Daniel",
+        "kind": "text",
+        "meta": {
+          "platform": "instagram",
+          "username": "D_ielllll",
+          "contactId": "daniel",
+          "displayName": "Daniel"
         }
       }
     ],
