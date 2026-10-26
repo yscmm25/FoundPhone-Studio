@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "炮友模拟器",
   "description": "以 KakaoTalk 为核心的多线关系互动模拟器：同时处理暧昧、邀约、时间冲突与关系后果。",
-  "revision": 10,
+  "revision": 11,
   "phone": {
     "owner": "○○",
     "date": "2026-10-25",
@@ -568,7 +568,7 @@
         "title": "SH_419",
         "body": "Songha",
         "sender": "Songha",
-        "kind": "profile",
+        "kind": "text",
         "meta": {
           "platform": "instagram",
           "username": "SH_419",
@@ -581,7 +581,7 @@
         "title": "D_ielllll",
         "body": "Daniel",
         "sender": "Daniel",
-        "kind": "profile",
+        "kind": "text",
         "meta": {
           "platform": "instagram",
           "username": "D_ielllll",
@@ -594,7 +594,7 @@
         "title": "hyunjun212nujnuyh",
         "body": "Hyunjun",
         "sender": "Hyunjun",
-        "kind": "profile",
+        "kind": "text",
         "meta": {
           "platform": "instagram",
           "username": "hyunjun212nujnuyh",
@@ -607,7 +607,7 @@
         "title": "Blueshark1024",
         "body": "Hanbi",
         "sender": "Hanbi",
-        "kind": "profile",
+        "kind": "text",
         "meta": {
           "platform": "instagram",
           "username": "Blueshark1024",
@@ -620,7 +620,7 @@
         "title": "1227_Lee",
         "body": "Nicholas",
         "sender": "Nicholas",
-        "kind": "profile",
+        "kind": "text",
         "meta": {
           "platform": "instagram",
           "username": "1227_Lee",
@@ -633,7 +633,7 @@
         "title": "Justinjay2^",
         "body": "Jayjay",
         "sender": "Jayjay",
-        "kind": "profile",
+        "kind": "text",
         "meta": {
           "platform": "instagram",
           "username": "Justinjay2^",
@@ -646,7 +646,7 @@
         "title": "MgCl₂_85",
         "body": "Hamin",
         "sender": "Hamin",
-        "kind": "profile",
+        "kind": "text",
         "meta": {
           "platform": "instagram",
           "username": "MgCl₂_85",
